@@ -1,0 +1,162 @@
+{
+  "page": "p-011",
+  "usage": {
+    "prompt_tokens": 1397,
+    "completion_tokens": 912,
+    "total_tokens": 2309,
+    "cost": 0.013738,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.013738,
+      "upstream_inference_prompt_cost": 0.002794,
+      "upstream_inference_completions_cost": 0.010944
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "parsed": [
+    {
+      "type": "table",
+      "columns": 5,
+      "rows": 4,
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "type": "label",
+          "text": "구분"
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "type": "label",
+          "text": "사업명"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "type": "label",
+          "text": "항목"
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "type": "label",
+          "text": "기존"
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "type": "label",
+          "text": "변경"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "rowspan": 3,
+          "type": "empty"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "rowspan": 3,
+          "type": "empty"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "rowspan": 3,
+          "type": "empty"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "type": "text",
+          "anchor_text": "작용을 자각하고 관리하도록 도움."
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "type": "text",
+          "anchor_text": "작용을 자각하고 관리하도록 도움."
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "type": "table",
+          "columns": 3,
+          "rows": 1,
+          "cells": [
+            {
+              "row": 0,
+              "col": 0,
+              "type": "label",
+              "text": "부가서비스"
+            },
+            {
+              "row": 0,
+              "col": 1,
+              "type": "text",
+              "anchor_text": "- 문화체험 및 여가활동 :"
+            },
+            {
+              "row": 0,
+              "col": 2,
+              "type": "label",
+              "text": "선택적\n제공"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "type": "table",
+          "columns": 3,
+          "rows": 1,
+          "cells": [
+            {
+              "row": 0,
+              "col": 0,
+              "type": "label",
+              "text": "부가서비스"
+            },
+            {
+              "row": 0,
+              "col": 1,
+              "type": "text",
+              "anchor_text": "- 문화체험 및 여가활동 :"
+            },
+            {
+              "row": 0,
+              "col": 2,
+              "type": "label",
+              "text": "선택적\n제공"
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "type": "text",
+          "anchor_text": "② 서비스 제공절차"
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "type": "text",
+          "anchor_text": "② 서비스 제공절차"
+        }
+      ]
+    }
+  ],
+  "raw": "```json\n[\n  {\n    \"type\": \"table\",\n    \"columns\": 5,\n    \"rows\": 4,\n    \"cells\": [\n      {\n        \"row\": 0,\n        \"col\": 0,\n        \"type\": \"label\",\n        \"text\": \"구분\"\n      },\n      {\n        \"row\": 0,\n        \"col\": 1,\n        \"type\": \"label\",\n        \"text\": \"사업명\"\n      },\n      {\n        \"row\": 0,\n        \"col\": 2,\n        \"type\": \"label\",\n        \"text\": \"항목\"\n      },\n      {\n        \"row\": 0,\n        \"col\": 3,\n        \"type\": \"label\",\n        \"text\": \"기존\"\n      },\n      {\n        \"row\": 0,\n        \"col\": 4,\n        \"type\": \"label\",\n        \"text\": \"변경\"\n      },\n      {\n        \"row\": 1,\n        \"col\": 0,\n        \"rowspan\": 3,\n        \"type\": \"empty\"\n      },\n      {\n        \"row\": 1,\n        \"col\": 1,\n        \"rowspan\": 3,\n        \"type\": \"empty\"\n      },\n      {\n        \"row\": 1,\n        \"col\": 2,\n        \"rowspan\": 3,\n        \"type\": \"empty\"\n      },\n      {\n        \"row\": 1,\n        \"col\": 3,\n        \"type\": \"text\",\n        \"anchor_text\": \"작용을 자각하고 관리하도록 도움.\"\n      },\n      {\n        \"row\": 1,\n        \"col\": 4,\n        \"type\": \"text\",\n        \"anchor_text\": \"작용을 자각하고 관리하도록 도움.\"\n      },\n      {\n        \"row\": 2,\n        \"col\": 3,\n        \"type\": \"table\",\n        \"columns\": 3,\n        \"rows\": 1,\n        \"cells\": [\n          {\n            \"row\": 0,\n            \"col\": 0,\n            \"type\": \"label\",\n            \"text\": \"부가서비스\"\n          },\n          {\n            \"row\": 0,\n            \"col\": 1,\n            \"type\": \"text\",\n            \"anchor_text\": \"- 문화체험 및 여가활동 :\"\n          },\n          {\n            \"row\": 0,\n            \"col\": 2,\n            \"type\": \"label\",\n            \"text\": \"선택적\\n제공\"\n          }\n        ]\n      },\n      {\n        \"row\": 2,\n        \"col\": 4,\n        \"type\": \"table\",\n        \"columns\": 3,\n        \"rows\": 1,\n        \"cells\": [\n          {\n            \"row\": 0,\n            \"col\": 0,\n            \"type\": \"label\",\n            \"text\": \"부가서비스\"\n          },\n          {\n            \"row\": 0,\n            \"col\": 1,\n            \"type\": \"text\",\n            \"anchor_text\": \"- 문화체험 및 여가활동 :\"\n          },\n          {\n            \"row\": 0,\n            \"col\": 2,\n            \"type\": \"label\",\n            \"text\": \"선택적\\n제공\"\n          }\n        ]\n      },\n      {\n        \"row\": 3,\n        \"col\": 3,\n        \"type\": \"text\",\n        \"anchor_text\": \"② 서비스 제공절차\"\n      },\n      {\n        \"row\": 3,\n        \"col\": 4,\n        \"type\": \"text\",\n        \"anchor_text\": \"② 서비스 제공절차\"\n      }\n    ]\n  }\n]\n```"
+}

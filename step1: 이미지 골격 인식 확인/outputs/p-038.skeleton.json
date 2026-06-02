@@ -1,0 +1,361 @@
+{
+  "page": "p-038",
+  "usage": {
+    "prompt_tokens": 1397,
+    "completion_tokens": 2177,
+    "total_tokens": 3574,
+    "cost": 0.028918,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.028918,
+      "upstream_inference_prompt_cost": 0.002794,
+      "upstream_inference_completions_cost": 0.026124
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "parsed": {
+    "tables": [
+      {
+        "type": "table",
+        "rows": [
+          {
+            "cells": [
+              {
+                "type": "label",
+                "content": "신청자 정보",
+                "colspan": 6,
+                "rowspan": 1
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "type": "label",
+                "content": "이름",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "empty",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "label",
+                "content": "생년월일",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "empty",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "label",
+                "content": "성별(◯체크)",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "text",
+                "content": "여 남",
+                "colspan": 1,
+                "rowspan": 1
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "type": "label",
+                "content": "연령",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "text",
+                "content": "만 세",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "label",
+                "content": "학년",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "empty",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "label",
+                "content": "보호자 이름",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "empty",
+                "colspan": 1,
+                "rowspan": 1
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "type": "label",
+                "content": "소견요약",
+                "colspan": 6,
+                "rowspan": 1
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "type": "label",
+                "content": "신청자의 특성",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "text",
+                "content": "※ 다음 중 신청자의 욕구에 해당하는 항목에 체크하세요(중복 V 체크 가능)\n□ ① 주의력결핍 및 과잉행동장애 □ ② 정서적 어려움: 불안, 우울, 공포, 불안정 애착\n□ ③ 사회성결여: 사회적 위축, 자기표현 및 대인관계의 어려움\n□ ④ 발달장애 경계 1: 언어문제 □ ④ 발달장애 경계 2: 인지문제\n□ ⑤ 반항, 품행장애, 비행 등 □ ⑥ 기타 (그 밖의 문제행동: )",
+                "colspan": 5,
+                "rowspan": 1
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "type": "label",
+                "content": "사용한 검사도구 (추가 가능)",
+                "colspan": 1,
+                "rowspan": 3
+              },
+              {
+                "type": "label",
+                "content": "검사도구",
+                "colspan": 2,
+                "rowspan": 1
+              },
+              {
+                "type": "label",
+                "content": "정상범위/백분위",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "label",
+                "content": "평가결과 (점수)",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "label",
+                "content": "참고점수 (하위척도의 점수)",
+                "colspan": 1,
+                "rowspan": 1
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "type": "label",
+                "content": "부모 보고",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "empty",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "empty",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "empty",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "empty",
+                "colspan": 1,
+                "rowspan": 1
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "type": "label",
+                "content": "전문가 보고",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "empty",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "empty",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "empty",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "empty",
+                "colspan": 1,
+                "rowspan": 1
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "type": "label",
+                "content": "평가소견",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "text",
+                "content": "(소견 및 치료의 주관적 서술)\n(소견 및 치료의 주관적 평가: 해당되는 번호에 V 체크)",
+                "colspan": 5,
+                "rowspan": 1
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "type": "label",
+                "content": "검사기관 정보",
+                "colspan": 6,
+                "rowspan": 1
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "type": "label",
+                "content": "기관명",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "empty",
+                "colspan": 2,
+                "rowspan": 1
+              },
+              {
+                "type": "label",
+                "content": "기관연락처",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "empty",
+                "colspan": 2,
+                "rowspan": 1
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "type": "label",
+                "content": "기관주소",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "empty",
+                "colspan": 5,
+                "rowspan": 1
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "type": "label",
+                "content": "작성자이름",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "empty",
+                "colspan": 2,
+                "rowspan": 1
+              },
+              {
+                "type": "label",
+                "content": "작성자 연락처",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "empty",
+                "colspan": 2,
+                "rowspan": 1
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "type": "label",
+                "content": "작성자 자격명",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "empty",
+                "colspan": 2,
+                "rowspan": 1
+              },
+              {
+                "type": "label",
+                "content": "작성자 자격번호",
+                "colspan": 1,
+                "rowspan": 1
+              },
+              {
+                "type": "empty",
+                "colspan": 2,
+                "rowspan": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "raw": "{\n  \"tables\": [\n    {\n      \"type\": \"table\",\n      \"rows\": [\n        {\n          \"cells\": [\n            {\n              \"type\": \"label\",\n              \"content\": \"신청자 정보\",\n              \"colspan\": 6,\n              \"rowspan\": 1\n            }\n          ]\n        },\n        {\n          \"cells\": [\n            {\n              \"type\": \"label\",\n              \"content\": \"이름\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"empty\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"label\",\n              \"content\": \"생년월일\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"empty\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"label\",\n              \"content\": \"성별(◯체크)\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"text\",\n              \"content\": \"여 남\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            }\n          ]\n        },\n        {\n          \"cells\": [\n            {\n              \"type\": \"label\",\n              \"content\": \"연령\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"text\",\n              \"content\": \"만 세\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"label\",\n              \"content\": \"학년\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"empty\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"label\",\n              \"content\": \"보호자 이름\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"empty\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            }\n          ]\n        },\n        {\n          \"cells\": [\n            {\n              \"type\": \"label\",\n              \"content\": \"소견요약\",\n              \"colspan\": 6,\n              \"rowspan\": 1\n            }\n          ]\n        },\n        {\n          \"cells\": [\n            {\n              \"type\": \"label\",\n              \"content\": \"신청자의 특성\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"text\",\n              \"content\": \"※ 다음 중 신청자의 욕구에 해당하는 항목에 체크하세요(중복 V 체크 가능)\\n□ ① 주의력결핍 및 과잉행동장애 □ ② 정서적 어려움: 불안, 우울, 공포, 불안정 애착\\n□ ③ 사회성결여: 사회적 위축, 자기표현 및 대인관계의 어려움\\n□ ④ 발달장애 경계 1: 언어문제 □ ④ 발달장애 경계 2: 인지문제\\n□ ⑤ 반항, 품행장애, 비행 등 □ ⑥ 기타 (그 밖의 문제행동: )\",\n              \"colspan\": 5,\n              \"rowspan\": 1\n            }\n          ]\n        },\n        {\n          \"cells\": [\n            {\n              \"type\": \"label\",\n              \"content\": \"사용한 검사도구 (추가 가능)\",\n              \"colspan\": 1,\n              \"rowspan\": 3\n            },\n            {\n              \"type\": \"label\",\n              \"content\": \"검사도구\",\n              \"colspan\": 2,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"label\",\n              \"content\": \"정상범위/백분위\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"label\",\n              \"content\": \"평가결과 (점수)\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"label\",\n              \"content\": \"참고점수 (하위척도의 점수)\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            }\n          ]\n        },\n        {\n          \"cells\": [\n            {\n              \"type\": \"label\",\n              \"content\": \"부모 보고\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"empty\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"empty\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"empty\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"empty\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            }\n          ]\n        },\n        {\n          \"cells\": [\n            {\n              \"type\": \"label\",\n              \"content\": \"전문가 보고\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"empty\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"empty\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"empty\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"empty\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            }\n          ]\n        },\n        {\n          \"cells\": [\n            {\n              \"type\": \"label\",\n              \"content\": \"평가소견\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"text\",\n              \"content\": \"(소견 및 치료의 주관적 서술)\\n(소견 및 치료의 주관적 평가: 해당되는 번호에 V 체크)\",\n              \"colspan\": 5,\n              \"rowspan\": 1\n            }\n          ]\n        },\n        {\n          \"cells\": [\n            {\n              \"type\": \"label\",\n              \"content\": \"검사기관 정보\",\n              \"colspan\": 6,\n              \"rowspan\": 1\n            }\n          ]\n        },\n        {\n          \"cells\": [\n            {\n              \"type\": \"label\",\n              \"content\": \"기관명\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"empty\",\n              \"colspan\": 2,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"label\",\n              \"content\": \"기관연락처\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"empty\",\n              \"colspan\": 2,\n              \"rowspan\": 1\n            }\n          ]\n        },\n        {\n          \"cells\": [\n            {\n              \"type\": \"label\",\n              \"content\": \"기관주소\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"empty\",\n              \"colspan\": 5,\n              \"rowspan\": 1\n            }\n          ]\n        },\n        {\n          \"cells\": [\n            {\n              \"type\": \"label\",\n              \"content\": \"작성자이름\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"empty\",\n              \"colspan\": 2,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"label\",\n              \"content\": \"작성자 연락처\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"empty\",\n              \"colspan\": 2,\n              \"rowspan\": 1\n            }\n          ]\n        },\n        {\n          \"cells\": [\n            {\n              \"type\": \"label\",\n              \"content\": \"작성자 자격명\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"empty\",\n              \"colspan\": 2,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"label\",\n              \"content\": \"작성자 자격번호\",\n              \"colspan\": 1,\n              \"rowspan\": 1\n            },\n            {\n              \"type\": \"empty\",\n              \"colspan\": 2,\n              \"rowspan\": 1\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}"
+}

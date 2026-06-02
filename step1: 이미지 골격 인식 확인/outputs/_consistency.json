@@ -1,0 +1,55 @@
+{
+  "p-038": {
+    "declared_cols": null,
+    "per_row_cellcounts": [
+      1,
+      6,
+      6,
+      1,
+      2,
+      5,
+      5,
+      5,
+      2,
+      1,
+      4,
+      2,
+      4,
+      4
+    ],
+    "col_normalized_consistent": false
+  },
+  "p-005": {
+    "declared_cols": 8,
+    "per_row_cellcounts": null,
+    "col_normalized_consistent": false
+  },
+  "p-011": {
+    "declared_cols": 5,
+    "per_row_cellcounts": null,
+    "col_normalized_consistent": false
+  },
+  "p-017": {
+    "declared_cols": 9,
+    "per_row_cellcounts": [
+      5,
+      10,
+      6,
+      7,
+      6,
+      6,
+      7
+    ],
+    "col_normalized_consistent": false
+  },
+  "p-007": {
+    "declared_cols": 5,
+    "per_row_cellcounts": [
+      5,
+      11,
+      9,
+      8
+    ],
+    "col_normalized_consistent": false
+  }
+}

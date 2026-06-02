@@ -1,0 +1,158 @@
+{
+  "p-038": {
+    "declared_columns": null,
+    "n_rows": 14,
+    "row_widths": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "row_width_dist": {
+      "6": 12,
+      "5": 2
+    },
+    "row_width_mode": 6,
+    "row_width_mode_ratio": 0.857,
+    "cell_type_counts": {
+      "table": 1,
+      "label": 25,
+      "empty": 19,
+      "text": 4
+    },
+    "table_nodes": 1,
+    "max_nesting_depth": 1,
+    "total_cells": 29,
+    "usage_total_tokens": 3574,
+    "usage_cost_usd": 0.028918
+  },
+  "p-005": {
+    "declared_columns": 8,
+    "n_rows": 9,
+    "row_widths": [
+      7,
+      7,
+      2,
+      7,
+      7,
+      7,
+      7,
+      8,
+      7
+    ],
+    "row_width_dist": {
+      "7": 7,
+      "2": 1,
+      "8": 1
+    },
+    "row_width_mode": 7,
+    "row_width_mode_ratio": 0.778,
+    "cell_type_counts": {
+      "table": 1,
+      "text": 59
+    },
+    "table_nodes": 1,
+    "max_nesting_depth": 1,
+    "total_cells": 59,
+    "usage_total_tokens": 6666,
+    "usage_cost_usd": 0.066022
+  },
+  "p-011": {
+    "declared_columns": 5,
+    "n_rows": 4,
+    "row_widths": [
+      5,
+      5,
+      2,
+      2
+    ],
+    "row_width_dist": {
+      "5": 2,
+      "2": 2
+    },
+    "row_width_mode": 5,
+    "row_width_mode_ratio": 0.5,
+    "cell_type_counts": {
+      "table": 3,
+      "label": 9,
+      "empty": 3,
+      "text": 6
+    },
+    "table_nodes": 3,
+    "max_nesting_depth": 2,
+    "total_cells": 9,
+    "usage_total_tokens": 2309,
+    "usage_cost_usd": 0.013738
+  },
+  "p-017": {
+    "declared_columns": 9,
+    "n_rows": 7,
+    "row_widths": [
+      5,
+      10,
+      6,
+      7,
+      6,
+      6,
+      7
+    ],
+    "row_width_dist": {
+      "5": 1,
+      "10": 1,
+      "6": 3,
+      "7": 2
+    },
+    "row_width_mode": 6,
+    "row_width_mode_ratio": 0.429,
+    "cell_type_counts": {
+      "table": 1,
+      "label": 21,
+      "empty": 2,
+      "text": 24
+    },
+    "table_nodes": 1,
+    "max_nesting_depth": 1,
+    "total_cells": 47,
+    "usage_total_tokens": 4839,
+    "usage_cost_usd": 0.044098
+  },
+  "p-007": {
+    "declared_columns": 5,
+    "n_rows": 4,
+    "row_widths": [
+      5,
+      11,
+      9,
+      8
+    ],
+    "row_width_dist": {
+      "5": 1,
+      "11": 1,
+      "9": 1,
+      "8": 1
+    },
+    "row_width_mode": 5,
+    "row_width_mode_ratio": 0.25,
+    "cell_type_counts": {
+      "table": 7,
+      "label": 38,
+      "empty": 1,
+      "text": 28
+    },
+    "table_nodes": 7,
+    "max_nesting_depth": 2,
+    "total_cells": 38,
+    "usage_total_tokens": 4607,
+    "usage_cost_usd": 0.041594
+  }
+}

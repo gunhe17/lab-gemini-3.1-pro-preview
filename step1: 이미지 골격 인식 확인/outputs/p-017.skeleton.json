@@ -1,0 +1,360 @@
+{
+  "page": "p-017",
+  "usage": {
+    "prompt_tokens": 1397,
+    "completion_tokens": 3442,
+    "total_tokens": 4839,
+    "cost": 0.044098,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.044098,
+      "upstream_inference_prompt_cost": 0.002794,
+      "upstream_inference_completions_cost": 0.041304
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "parsed": [
+    {
+      "type": "table",
+      "columns": 9,
+      "rows": 7,
+      "structure": [
+        {
+          "row_index": 0,
+          "cells": [
+            {
+              "column_index": 0,
+              "span_type": "none",
+              "content_type": "label",
+              "anchor_text": "구분"
+            },
+            {
+              "column_index": 1,
+              "span_type": "none",
+              "content_type": "label",
+              "anchor_text": "사업명"
+            },
+            {
+              "column_index": 2,
+              "span_type": "none",
+              "content_type": "label",
+              "anchor_text": "항목"
+            },
+            {
+              "column_index": 3,
+              "span_type": "colspan",
+              "span_count": 3,
+              "content_type": "label",
+              "anchor_text": "기존"
+            },
+            {
+              "column_index": 6,
+              "span_type": "colspan",
+              "span_count": 3,
+              "content_type": "label",
+              "anchor_text": "변경"
+            }
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            {
+              "column_index": 0,
+              "span_type": "rowspan",
+              "span_count": 6,
+              "content_type": "empty",
+              "anchor_text": ""
+            },
+            {
+              "column_index": 1,
+              "span_type": "rowspan",
+              "span_count": 6,
+              "content_type": "empty",
+              "anchor_text": ""
+            },
+            {
+              "column_index": 2,
+              "span_type": "rowspan",
+              "span_count": 5,
+              "content_type": "label",
+              "anchor_text": "㉰\n신체\n건강ㆍ\n대인\n관계\n증진\n서비스\n<선택>"
+            },
+            {
+              "column_index": 3,
+              "span_type": "none",
+              "content_type": "label",
+              "anchor_text": "음악\n치료"
+            },
+            {
+              "column_index": 4,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "악기연주 및 다양한\n음률활동으로 어르신\n의 부정적 정서를\n긍정적 정서로 변화"
+            },
+            {
+              "column_index": 5,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "음악관\n련\n민간자\n격증\n소지자"
+            },
+            {
+              "column_index": 6,
+              "span_type": "rowspan",
+              "span_count": 2,
+              "content_type": "label",
+              "anchor_text": "㉮\n정서\n지원\n서비스\n<필수>"
+            },
+            {
+              "column_index": 7,
+              "span_type": "none",
+              "content_type": "label",
+              "anchor_text": "미술\n치료"
+            },
+            {
+              "column_index": 8,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "미술활동으로 어\n르신 내면 탐색,\n감정표현을 도와\n내면의 스트레스\n해소"
+            },
+            {
+              "column_index": 9,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "미술관련\n민간자격\n증\n소지자"
+            }
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            {
+              "column_index": 3,
+              "span_type": "none",
+              "content_type": "label",
+              "anchor_text": "원예\n치료"
+            },
+            {
+              "column_index": 4,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "꽃 배치 및 장식을\n통해 자신의 내면 표\n현 및 소근육을 발달\n시키고, 활동과 관련\n된 어르신들의 경험\n이야기 나누고 소통\n하는 프로그램"
+            },
+            {
+              "column_index": 5,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "원예관\n련\n민간자\n격증\n소지자"
+            },
+            {
+              "column_index": 7,
+              "span_type": "none",
+              "content_type": "label",
+              "anchor_text": "음악\n치료"
+            },
+            {
+              "column_index": 8,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "악기연주 및 다\n양한 음률활동으\n로 어르신의 부정\n적 정서를 긍정적\n정서로 변화"
+            },
+            {
+              "column_index": 9,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "음악관련\n민간자격\n증\n소지자"
+            }
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            {
+              "column_index": 3,
+              "span_type": "none",
+              "content_type": "label",
+              "anchor_text": "건강\n체조"
+            },
+            {
+              "column_index": 4,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "건강 체조는 에어로\n빅처럼 개인 체조활\n동 보다는 커플이나\n집단이 함께 운동할\n수 있는 프로그램으\n로 구성"
+            },
+            {
+              "column_index": 5,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "스포츠\n지도사,\n노인스\n포츠\n지도사,\n건강운\n동관리\n사,\n노인(시\n니어,실\n버)\n운동관\n련\n민간자\n격증\n소지자"
+            },
+            {
+              "column_index": 6,
+              "span_type": "rowspan",
+              "span_count": 4,
+              "content_type": "label",
+              "anchor_text": "㉰\n신체\n건강ㆍ\n대인\n관계\n증진\n서비스\n<선택>"
+            },
+            {
+              "column_index": 7,
+              "span_type": "none",
+              "content_type": "label",
+              "anchor_text": "원예\n치료"
+            },
+            {
+              "column_index": 8,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "꽃 배치 및 장식\n을 통해 자신의\n내면 표현 및 소\n근육을 발달시키\n고, 활동과 관련\n된 어르신들의 경\n험 이야기 나누고\n소통하는 프로그\n램"
+            },
+            {
+              "column_index": 9,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "원예관련\n민간자격\n증\n소지자"
+            }
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            {
+              "column_index": 3,
+              "span_type": "none",
+              "content_type": "label",
+              "anchor_text": "레크\n리에\n이션\n치료"
+            },
+            {
+              "column_index": 4,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "짝게임, 상대 마음\n읽어주기 등 개인이\n아닌 모두가 함께\n참여할 수 있는 레\n크레이션 활동 중심\n으로 프로그램 구성"
+            },
+            {
+              "column_index": 5,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "레크리\n에이션\n관련\n민간자\n격증\n소지자"
+            },
+            {
+              "column_index": 7,
+              "span_type": "none",
+              "content_type": "label",
+              "anchor_text": "건강\n체조"
+            },
+            {
+              "column_index": 8,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "건강 체조는 에\n어로빅처럼 개인\n체조활동 보다는\n커플이나 집단이\n함께 운동할 수\n있는 프로그램으\n로 구성"
+            },
+            {
+              "column_index": 9,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "스포츠지\n도사,\n노인스포\n츠\n지도사,\n건강운동\n관리사,\n노인(시니\n어,실버)\n운동관련\n민간자격\n증\n소지자"
+            }
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            {
+              "column_index": 3,
+              "span_type": "none",
+              "content_type": "label",
+              "anchor_text": "웃음\n치료"
+            },
+            {
+              "column_index": 4,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "웃음노래와 율동을\n통해 어르신의 신체\n적 건강과 삶에 대\n한 희망을 유지시키\n는 프로그램"
+            },
+            {
+              "column_index": 5,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "웃음치\n료 관련\n민간자\n격증\n소지자"
+            },
+            {
+              "column_index": 7,
+              "span_type": "none",
+              "content_type": "label",
+              "anchor_text": "레크\n리에\n이션\n치료"
+            },
+            {
+              "column_index": 8,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "짝게임, 상대 마\n음 읽어주기 등\n개인이 아닌 모두\n가 함께 참여할\n수 있는 레크리\n에이션 활동 중\n심으로 프로그램\n구성"
+            },
+            {
+              "column_index": 9,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "레크리에\n이션\n관련\n민간자격\n증\n소지자"
+            }
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            {
+              "column_index": 2,
+              "span_type": "none",
+              "content_type": "label",
+              "anchor_text": "㉱\n문화\n여가\n서비스\n<선택>"
+            },
+            {
+              "column_index": 3,
+              "span_type": "none",
+              "content_type": "label",
+              "anchor_text": "문화\n체험/\n나들이\n공연\n관람"
+            },
+            {
+              "column_index": 4,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "외부활동의 기회가\n적은 어르신들에게\n다양한 문화체험의\n기회를 제공하고 참\n여 어르신의 사회적\n활동을 지원하고 어\n르신들 간 유대감\n형성 및 친밀감을\n높임"
+            },
+            {
+              "column_index": 5,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "사회복\n지사"
+            },
+            {
+              "column_index": 7,
+              "span_type": "none",
+              "content_type": "label",
+              "anchor_text": "웃음\n치료"
+            },
+            {
+              "column_index": 8,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "웃음노래와 율동\n을 통해 어르신의\n신체적 건강과 삶\n에 대한 희망을\n유지시키는 프로\n그램"
+            },
+            {
+              "column_index": 9,
+              "span_type": "none",
+              "content_type": "text",
+              "anchor_text": "웃음치료\n관련\n민간자격\n증\n소지자"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "raw": "[\n  {\n    \"type\": \"table\",\n    \"columns\": 9,\n    \"rows\": 7,\n    \"structure\": [\n      {\n        \"row_index\": 0,\n        \"cells\": [\n          {\n            \"column_index\": 0,\n            \"span_type\": \"none\",\n            \"content_type\": \"label\",\n            \"anchor_text\": \"구분\"\n          },\n          {\n            \"column_index\": 1,\n            \"span_type\": \"none\",\n            \"content_type\": \"label\",\n            \"anchor_text\": \"사업명\"\n          },\n          {\n            \"column_index\": 2,\n            \"span_type\": \"none\",\n            \"content_type\": \"label\",\n            \"anchor_text\": \"항목\"\n          },\n          {\n            \"column_index\": 3,\n            \"span_type\": \"colspan\",\n            \"span_count\": 3,\n            \"content_type\": \"label\",\n            \"anchor_text\": \"기존\"\n          },\n          {\n            \"column_index\": 6,\n            \"span_type\": \"colspan\",\n            \"span_count\": 3,\n            \"content_type\": \"label\",\n            \"anchor_text\": \"변경\"\n          }\n        ]\n      },\n      {\n        \"row_index\": 1,\n        \"cells\": [\n          {\n            \"column_index\": 0,\n            \"span_type\": \"rowspan\",\n            \"span_count\": 6,\n            \"content_type\": \"empty\",\n            \"anchor_text\": \"\"\n          },\n          {\n            \"column_index\": 1,\n            \"span_type\": \"rowspan\",\n            \"span_count\": 6,\n            \"content_type\": \"empty\",\n            \"anchor_text\": \"\"\n          },\n          {\n            \"column_index\": 2,\n            \"span_type\": \"rowspan\",\n            \"span_count\": 5,\n            \"content_type\": \"label\",\n            \"anchor_text\": \"㉰\\n신체\\n건강ㆍ\\n대인\\n관계\\n증진\\n서비스\\n<선택>\"\n          },\n          {\n            \"column_index\": 3,\n            \"span_type\": \"none\",\n            \"content_type\": \"label\",\n            \"anchor_text\": \"음악\\n치료\"\n          },\n          {\n            \"column_index\": 4,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"악기연주 및 다양한\\n음률활동으로 어르신\\n의 부정적 정서를\\n긍정적 정서로 변화\"\n          },\n          {\n            \"column_index\": 5,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"음악관\\n련\\n민간자\\n격증\\n소지자\"\n          },\n          {\n            \"column_index\": 6,\n            \"span_type\": \"rowspan\",\n            \"span_count\": 2,\n            \"content_type\": \"label\",\n            \"anchor_text\": \"㉮\\n정서\\n지원\\n서비스\\n<필수>\"\n          },\n          {\n            \"column_index\": 7,\n            \"span_type\": \"none\",\n            \"content_type\": \"label\",\n            \"anchor_text\": \"미술\\n치료\"\n          },\n          {\n            \"column_index\": 8,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"미술활동으로 어\\n르신 내면 탐색,\\n감정표현을 도와\\n내면의 스트레스\\n해소\"\n          },\n          {\n            \"column_index\": 9,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"미술관련\\n민간자격\\n증\\n소지자\"\n          }\n        ]\n      },\n      {\n        \"row_index\": 2,\n        \"cells\": [\n          {\n            \"column_index\": 3,\n            \"span_type\": \"none\",\n            \"content_type\": \"label\",\n            \"anchor_text\": \"원예\\n치료\"\n          },\n          {\n            \"column_index\": 4,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"꽃 배치 및 장식을\\n통해 자신의 내면 표\\n현 및 소근육을 발달\\n시키고, 활동과 관련\\n된 어르신들의 경험\\n이야기 나누고 소통\\n하는 프로그램\"\n          },\n          {\n            \"column_index\": 5,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"원예관\\n련\\n민간자\\n격증\\n소지자\"\n          },\n          {\n            \"column_index\": 7,\n            \"span_type\": \"none\",\n            \"content_type\": \"label\",\n            \"anchor_text\": \"음악\\n치료\"\n          },\n          {\n            \"column_index\": 8,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"악기연주 및 다\\n양한 음률활동으\\n로 어르신의 부정\\n적 정서를 긍정적\\n정서로 변화\"\n          },\n          {\n            \"column_index\": 9,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"음악관련\\n민간자격\\n증\\n소지자\"\n          }\n        ]\n      },\n      {\n        \"row_index\": 3,\n        \"cells\": [\n          {\n            \"column_index\": 3,\n            \"span_type\": \"none\",\n            \"content_type\": \"label\",\n            \"anchor_text\": \"건강\\n체조\"\n          },\n          {\n            \"column_index\": 4,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"건강 체조는 에어로\\n빅처럼 개인 체조활\\n동 보다는 커플이나\\n집단이 함께 운동할\\n수 있는 프로그램으\\n로 구성\"\n          },\n          {\n            \"column_index\": 5,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"스포츠\\n지도사,\\n노인스\\n포츠\\n지도사,\\n건강운\\n동관리\\n사,\\n노인(시\\n니어,실\\n버)\\n운동관\\n련\\n민간자\\n격증\\n소지자\"\n          },\n          {\n            \"column_index\": 6,\n            \"span_type\": \"rowspan\",\n            \"span_count\": 4,\n            \"content_type\": \"label\",\n            \"anchor_text\": \"㉰\\n신체\\n건강ㆍ\\n대인\\n관계\\n증진\\n서비스\\n<선택>\"\n          },\n          {\n            \"column_index\": 7,\n            \"span_type\": \"none\",\n            \"content_type\": \"label\",\n            \"anchor_text\": \"원예\\n치료\"\n          },\n          {\n            \"column_index\": 8,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"꽃 배치 및 장식\\n을 통해 자신의\\n내면 표현 및 소\\n근육을 발달시키\\n고, 활동과 관련\\n된 어르신들의 경\\n험 이야기 나누고\\n소통하는 프로그\\n램\"\n          },\n          {\n            \"column_index\": 9,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"원예관련\\n민간자격\\n증\\n소지자\"\n          }\n        ]\n      },\n      {\n        \"row_index\": 4,\n        \"cells\": [\n          {\n            \"column_index\": 3,\n            \"span_type\": \"none\",\n            \"content_type\": \"label\",\n            \"anchor_text\": \"레크\\n리에\\n이션\\n치료\"\n          },\n          {\n            \"column_index\": 4,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"짝게임, 상대 마음\\n읽어주기 등 개인이\\n아닌 모두가 함께\\n참여할 수 있는 레\\n크레이션 활동 중심\\n으로 프로그램 구성\"\n          },\n          {\n            \"column_index\": 5,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"레크리\\n에이션\\n관련\\n민간자\\n격증\\n소지자\"\n          },\n          {\n            \"column_index\": 7,\n            \"span_type\": \"none\",\n            \"content_type\": \"label\",\n            \"anchor_text\": \"건강\\n체조\"\n          },\n          {\n            \"column_index\": 8,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"건강 체조는 에\\n어로빅처럼 개인\\n체조활동 보다는\\n커플이나 집단이\\n함께 운동할 수\\n있는 프로그램으\\n로 구성\"\n          },\n          {\n            \"column_index\": 9,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"스포츠지\\n도사,\\n노인스포\\n츠\\n지도사,\\n건강운동\\n관리사,\\n노인(시니\\n어,실버)\\n운동관련\\n민간자격\\n증\\n소지자\"\n          }\n        ]\n      },\n      {\n        \"row_index\": 5,\n        \"cells\": [\n          {\n            \"column_index\": 3,\n            \"span_type\": \"none\",\n            \"content_type\": \"label\",\n            \"anchor_text\": \"웃음\\n치료\"\n          },\n          {\n            \"column_index\": 4,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"웃음노래와 율동을\\n통해 어르신의 신체\\n적 건강과 삶에 대\\n한 희망을 유지시키\\n는 프로그램\"\n          },\n          {\n            \"column_index\": 5,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"웃음치\\n료 관련\\n민간자\\n격증\\n소지자\"\n          },\n          {\n            \"column_index\": 7,\n            \"span_type\": \"none\",\n            \"content_type\": \"label\",\n            \"anchor_text\": \"레크\\n리에\\n이션\\n치료\"\n          },\n          {\n            \"column_index\": 8,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"짝게임, 상대 마\\n음 읽어주기 등\\n개인이 아닌 모두\\n가 함께 참여할\\n수 있는 레크리\\n에이션 활동 중\\n심으로 프로그램\\n구성\"\n          },\n          {\n            \"column_index\": 9,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"레크리에\\n이션\\n관련\\n민간자격\\n증\\n소지자\"\n          }\n        ]\n      },\n      {\n        \"row_index\": 6,\n        \"cells\": [\n          {\n            \"column_index\": 2,\n            \"span_type\": \"none\",\n            \"content_type\": \"label\",\n            \"anchor_text\": \"㉱\\n문화\\n여가\\n서비스\\n<선택>\"\n          },\n          {\n            \"column_index\": 3,\n            \"span_type\": \"none\",\n            \"content_type\": \"label\",\n            \"anchor_text\": \"문화\\n체험/\\n나들이\\n공연\\n관람\"\n          },\n          {\n            \"column_index\": 4,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"외부활동의 기회가\\n적은 어르신들에게\\n다양한 문화체험의\\n기회를 제공하고 참\\n여 어르신의 사회적\\n활동을 지원하고 어\\n르신들 간 유대감\\n형성 및 친밀감을\\n높임\"\n          },\n          {\n            \"column_index\": 5,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"사회복\\n지사\"\n          },\n          {\n            \"column_index\": 7,\n            \"span_type\": \"none\",\n            \"content_type\": \"label\",\n            \"anchor_text\": \"웃음\\n치료\"\n          },\n          {\n            \"column_index\": 8,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"웃음노래와 율동\\n을 통해 어르신의\\n신체적 건강과 삶\\n에 대한 희망을\\n유지시키는 프로\\n그램\"\n          },\n          {\n            \"column_index\": 9,\n            \"span_type\": \"none\",\n            \"content_type\": \"text\",\n            \"anchor_text\": \"웃음치료\\n관련\\n민간자격\\n증\\n소지자\"\n          }\n        ]\n      }\n    ]\n  }\n]"
+}
