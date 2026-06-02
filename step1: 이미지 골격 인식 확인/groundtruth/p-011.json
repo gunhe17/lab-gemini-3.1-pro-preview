@@ -1,0 +1,16 @@
+{
+  "_meta": {
+    "page": "p-011", "level": "L3", "labeled": "draft",
+    "draft_by": "claude", "needs_review": true,
+    "note": "기존/변경 비교. 최상위(gt) 표 기준 골격. 기존/변경 셀 내부에 inner table(부/가/처/소 세로) 존재 — inner는 별도 취급."
+  },
+  "total_columns": 5,
+  "header_levels": 1,
+  "header_spans": [],
+  "body_row_count": 2,
+  "merges": [
+    {"anchor_label": "구분(좌측 세로 라벨)", "direction": "rows", "span_count": 2},
+    {"anchor_label": "사업명(세로 라벨)", "direction": "rows", "span_count": 2}
+  ],
+  "_uncertain": ["body_row_count(세로 병합이 깊어 최상위 행 분해 모호)", "inner table를 merges로 셀지 별도 필드로 둘지 검수 결정"]
+}

@@ -1,0 +1,16 @@
+{
+  "_meta": {
+    "page": "p-017", "level": "L3", "labeled": "draft",
+    "draft_by": "claude", "needs_review": true,
+    "note": "기존/변경 비교. p-011 동계열. 구분/사업명/항목 세로 병합 머리글, 기존/변경 셀 내부 inner table."
+  },
+  "total_columns": 5,
+  "header_levels": 1,
+  "header_spans": [],
+  "body_row_count": 4,
+  "merges": [
+    {"anchor_label": "구분(세로 라벨)", "direction": "rows", "span_count": 4},
+    {"anchor_label": "사업명(세로 라벨)", "direction": "rows", "span_count": 4}
+  ],
+  "_uncertain": ["body_row_count(항목 행 3~4개 추정)", "항목 열도 일부 세로 병합 가능"]
+}

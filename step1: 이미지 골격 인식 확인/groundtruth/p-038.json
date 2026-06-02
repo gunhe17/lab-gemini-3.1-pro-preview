@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "page": "p-038", "level": "L1", "labeled": "draft",
+    "draft_by": "claude", "needs_review": true,
+    "note": "소견서 '폼' — 데이터 표가 아니라 양식이라 골격 스키마와 정합성 낮음. 전역 열 헤더 없음(섹션 밴드만 존재). 검수 시 폼을 이 스키마로 다룰지 자체를 먼저 판단 필요."
+  },
+  "total_columns": 6,
+  "header_levels": 0,
+  "header_spans": [],
+  "body_row_count": 11,
+  "merges": [
+    {"anchor_label": "신청자 정보", "direction": "columns", "span_count": 6},
+    {"anchor_label": "소견요약", "direction": "columns", "span_count": 6},
+    {"anchor_label": "검사기관 정보", "direction": "columns", "span_count": 6},
+    {"anchor_label": "신청자의 특성", "direction": "rows", "span_count": 5},
+    {"anchor_label": "사용한 검사도구", "direction": "rows", "span_count": 3},
+    {"anchor_label": "평가소견", "direction": "rows", "span_count": 2},
+    {"anchor_label": "기관주소", "direction": "columns", "span_count": 5}
+  ],
+  "_uncertain": ["body_row_count(폼 특성상 행 정의 모호)", "header_levels(검사도구 블록에 국소 1단 헤더 있음)", "merges(밴드/라벨 rowspan 다수, 일부 누락 가능)"]
+}

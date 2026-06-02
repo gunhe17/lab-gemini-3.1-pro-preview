@@ -1,0 +1,16 @@
+{
+  "_meta": {
+    "page": "p-005", "level": "L2", "labeled": "draft",
+    "draft_by": "claude", "needs_review": true,
+    "note": "사업별 주요 내용. 단일 헤더. 좌측 '구분' 열은 카테고리 세로 병합."
+  },
+  "total_columns": 8,
+  "header_levels": 1,
+  "header_spans": [],
+  "body_row_count": 7,
+  "merges": [
+    {"anchor_label": "구분(좌측 세로 카테고리 열)", "direction": "rows", "span_count": 7},
+    {"anchor_label": "사업명 일부(예: 130209/130208 동일 사업)", "direction": "rows", "span_count": 2}
+  ],
+  "_uncertain": ["body_row_count(사업명별 7~8행, 일부 2행 병합 혼재)", "총 열 수: 횟수/시간 분리 여부 재확인"]
+}
