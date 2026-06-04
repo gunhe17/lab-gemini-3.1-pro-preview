@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<!-- s3-form-bands (L2) : +C1 전폭 밴드 +C6 빈칸/체크박스 +C7 본문 colspan·불규칙폭. 폼(소견서형) -->
+<style>
+  body{margin:0;background:#fff;font-family:'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;color:#000;}
+  .doc{display:inline-block;padding:20px;}
+  h2{text-align:center;font-size:17px;margin:0 0 10px;}
+  table{border-collapse:collapse;font-size:13px;width:760px;}
+  td,th{border:1px solid #333;padding:6px 9px;vertical-align:middle;line-height:1.6;}
+  th{background:#dcdcdc;text-align:center;font-weight:700;}
+  .band{background:#c5c5c5;text-align:center;font-weight:700;}
+  .big{height:54px;vertical-align:top;}
+  .chk{letter-spacing:1px;}
+</style>
+</head>
+<body>
+<div class="doc">
+<h2>심리지원서비스 상담 신청서</h2>
+<table>
+  <!-- 전폭 섹션 밴드 1 -->
+  <tr><td class="band" colspan="6">신청자 정보</td></tr>
+  <tr>
+    <th>성명</th><td></td>
+    <th>생년월일</th><td></td>
+    <th>성별</th><td class="chk">□ 남 &#160; □ 여</td>
+  </tr>
+  <tr>
+    <th>연락처</th><td></td>
+    <th>이메일</th><td></td>
+    <th>구분</th><td class="chk">□ 신규 &#160; □ 재방문</td>
+  </tr>
+
+  <!-- 전폭 섹션 밴드 2 -->
+  <tr><td class="band" colspan="6">상담 신청 내용</td></tr>
+  <tr>
+    <th rowspan="2">신청 유형</th>
+    <td colspan="5" class="chk">□ ① 개인상담 &#160; □ ② 가족상담 &#160; □ ③ 집단상담 &#160; □ ④ 기타</td>
+  </tr>
+  <tr>
+    <td colspan="5" class="big">(④ 기타 선택 시 사유 기재)</td>
+  </tr>
+  <tr>
+    <th>희망 일시</th>
+    <td colspan="5"></td>
+  </tr>
+  <tr>
+    <th>상세 내용</th>
+    <td colspan="5" class="big"></td>
+  </tr>
+
+  <!-- 전폭 섹션 밴드 3 -->
+  <tr><td class="band" colspan="6">접수 확인 (기관 작성)</td></tr>
+  <tr>
+    <th>접수번호</th><td></td>
+    <th>접수일</th><td></td>
+    <th>담당자</th><td></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

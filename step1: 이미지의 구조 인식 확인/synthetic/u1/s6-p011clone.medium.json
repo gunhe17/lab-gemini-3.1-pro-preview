@@ -1,0 +1,30 @@
+{
+  "page": "s6-p011clone",
+  "level": "medium",
+  "teds_struct": 0.875,
+  "usage": {
+    "prompt_tokens": 1277,
+    "completion_tokens": 2103,
+    "total_tokens": 3380,
+    "cost": 0.02779,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.02779,
+      "upstream_inference_prompt_cost": 0.002554,
+      "upstream_inference_completions_cost": 0.025236
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1958,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "pred_skeleton": "<table>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>\n      <table>\n        <tr>\n          <td colspan=\"2\"></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td></td>\n          <td></td>\n          <td></td>\n        </tr>\n      </table>\n    </td>\n    <td>\n      <table>\n        <tr>\n          <td colspan=\"2\"></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td></td>\n          <td></td>\n          <td></td>\n        </tr>\n      </table>\n    </td>\n  </tr>\n</table>",
+  "raw": "<table>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>\n      <table>\n        <tr>\n          <td colspan=\"2\"></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td></td>\n          <td></td>\n          <td></td>\n        </tr>\n      </table>\n    </td>\n    <td>\n      <table>\n        <tr>\n          <td colspan=\"2\"></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td></td>\n          <td></td>\n          <td></td>\n        </tr>\n      </table>\n    </td>\n  </tr>\n</table>"
+}

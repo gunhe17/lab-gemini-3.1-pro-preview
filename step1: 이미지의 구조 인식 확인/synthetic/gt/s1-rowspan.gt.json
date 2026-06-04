@@ -1,0 +1,147 @@
+{
+  "id": "s1-rowspan",
+  "source": "s1-rowspan.html",
+  "skeleton": {
+    "type": "table",
+    "columns": 4,
+    "row_count": 5,
+    "col_normalized_consistent": true,
+    "row_fill": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "rows": [
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "구분"
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "사업명"
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "지원대상"
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "지원내용"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 2,
+            "text": "돌봄지원"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "아동 돌봄"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "만 12세 이하 아동"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "시간제 돌보미 파견등·하원 동행"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "장애아 돌봄"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "등록 장애아동"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "전담 돌보미 매칭활동보조 연계"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 2,
+            "text": "교육지원"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "방과후 학습"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "초·중학생"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "교과 보충학습학습 교구 제공"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "진로 상담"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "중·고등학생"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "1:1 진로설계직업체험 연계"
+          }
+        ]
+      }
+    ]
+  }
+}

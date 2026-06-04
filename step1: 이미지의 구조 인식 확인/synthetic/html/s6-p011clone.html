@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<!-- s6-p011clone (L3) : 입력 p-011 구조 복제 (수정2).
+     외곽 5열(구분·사업명·항목·기존·변경). 원본과 동일하게 구분/사업명/항목은 빈칸(앞 페이지 병합 연속).
+     기존/변경 칸 = [중첩 3열 테이블] + [문자열 텍스트].
+       · 중첩표(C4): 3열 2행 — 1행 [빈칸 | ㉔㉕ 불릿 블록 | 빈칸], 2행 [부가서비스 | 내용 | 선택적 제공].
+         부가서비스 행이 테이블의 마지막(완성) 행.
+       · 테이블 하단 ② 서비스 제공절차 1·2·3단계 = 표가 아닌 문자열 데이터(셀 직속 텍스트). -->
+<style>
+  body{margin:0;background:#fff;font-family:'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;color:#000;}
+  .doc{display:inline-block;padding:20px;}
+  table{border-collapse:collapse;font-size:12px;}
+  table.outer{width:940px;}
+  td,th{border:1px solid #333;padding:5px 8px;vertical-align:top;line-height:1.5;}
+  th{background:#e9e9e9;text-align:center;font-weight:700;}
+  table.inner{width:100%;margin:0 0 8px;font-size:11px;}
+  table.inner td,table.inner th{padding:4px 6px;}
+  .vlabel{background:#f2f2f2;text-align:center;font-weight:700;vertical-align:middle;width:34px;}
+  .sel{text-align:center;vertical-align:middle;width:64px;}
+  .lv{margin:0 0 4px;padding-left:14px;}
+  .lv li{margin:2px 0;}
+  .circ{font-weight:700;margin:2px 0;}
+  .str{margin:0;}
+  .str .head{font-weight:700;margin:2px 0 4px;}
+</style>
+</head>
+<body>
+<div class="doc">
+<table class="outer">
+  <tr>
+    <th>구분</th><th>사업명</th><th>항목</th><th>기존</th><th>변경</th>
+  </tr>
+
+  <tr>
+    <!-- 원본과 동일하게 빈칸 (앞 페이지에서 병합 연속) -->
+    <td></td>
+    <td></td>
+    <td></td>
+
+    <!-- 기존 : [중첩 3열 테이블] + [문자열 ② 제공절차] -->
+    <td>
+      <table class="inner">
+        <tr>
+          <td class="vlabel"></td>
+          <td>
+            <div class="circ">㉔ 위기관리 지원</div>
+            <ul class="lv">
+              <li>위기상황을 인식하고 관리할 수 있는 정보제공 및 교육, 대처능력이 향상되도록 지원함.</li>
+              <li>위기상황을 가족과 관련 전문기관에 알리고 도움을 받을 수 있도록 지원하고 연계함.</li>
+              <li>입·퇴원 상황에서 필요로 하는 서비스를 받을 수 있도록 지원함.</li>
+            </ul>
+            <div class="circ">㉕ 사회적응 및 취업지원</div>
+            <ul class="lv">
+              <li>지역사회와 교류하며 관계를 만들어 갈 수 있도록 사회참여를 독려하고 기회를 확대하도록 지원함.</li>
+              <li>취업 및 창업에 필요한 기술 및 스트레스 관리 방법을 익히도록 지원함.</li>
+            </ul>
+          </td>
+          <td class="sel"></td>
+        </tr>
+        <tr>
+          <th class="vlabel">부가<br/>서비스</th>
+          <td>문화체험 및 여가활동 : 가족, 이웃, 지역사회와 함께 어울릴 수 있는 문화체험 및 여가활동을 제공함.</td>
+          <td class="sel">선택적<br/>제공</td>
+        </tr>
+      </table>
+      <div class="str">
+        <div class="head">② 서비스 제공절차</div>
+        - 1단계 : 증상이나 기능 등에 대한 사전평가 및 욕구사정을 통해 계획 수립 (종료시 효과성을 측정할 수 있는 검사 의무 실시)<br/>
+        - 2단계 : 개인별 증상이나 기능의 수준에 따라 서비스를 제공<br/>
+        - 3단계 : 이용자의 증상, 기능 등에 대한 사후평가를 실시하여 효과성 점검
+      </div>
+    </td>
+
+    <!-- 변경 : 거의 동일 -->
+    <td>
+      <table class="inner">
+        <tr>
+          <td class="vlabel"></td>
+          <td>
+            <div class="circ">㉔ 위기관리 지원</div>
+            <ul class="lv">
+              <li>위기상황을 인식하고 관리할 수 있는 정보제공 및 교육, 대처능력이 향상되도록 지원함.</li>
+              <li>위기상황을 가족과 관련 전문기관에 알리고 도움을 받을 수 있도록 지원하고 연계함.</li>
+              <li>입·퇴원 상황에서 필요로 하는 서비스를 받을 수 있도록 지원함.</li>
+            </ul>
+            <div class="circ">㉕ 사회적응 및 취업지원</div>
+            <ul class="lv">
+              <li>지역사회와 교류하며 관계를 만들어 갈 수 있도록 사회참여를 독려하고 기회를 확대하도록 지원함.</li>
+              <li>취업 및 창업에 필요한 기술 및 스트레스 관리 방법을 익히도록 지원함.</li>
+            </ul>
+          </td>
+          <td class="sel"></td>
+        </tr>
+        <tr>
+          <th class="vlabel">부가<br/>서비스</th>
+          <td>문화체험 및 여가활동 : 가족, 이웃, 지역사회와 함께 어울릴 수 있는 문화체험 및 여가활동을 제공함.</td>
+          <td class="sel">선택적<br/>제공</td>
+        </tr>
+      </table>
+      <div class="str">
+        <div class="head">② 서비스 제공절차</div>
+        - 1단계 : 증상이나 기능 등에 대한 사전평가 및 욕구사정을 통해 계획 수립 (종료시 효과성을 측정할 수 있는 검사 의무 실시)<br/>
+        - 2단계 : 개인별 증상이나 기능의 수준에 따라 서비스를 제공<br/>
+        - 3단계 : 이용자의 증상, 기능 등에 대한 사후평가를 실시하여 효과성 점검
+      </div>
+    </td>
+  </tr>
+</table>
+</div>
+</body>
+</html>
