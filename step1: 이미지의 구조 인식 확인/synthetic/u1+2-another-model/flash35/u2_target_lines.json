@@ -1,0 +1,27 @@
+{
+  "model": "gemini-3.5-flash",
+  "id": "target_lines",
+  "kind": "target",
+  "gt": 2,
+  "n": 5,
+  "answers": [
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "modal": 1,
+  "modal_count": 5,
+  "agreement": 1.0,
+  "distinct": 1,
+  "correct_rate": 0.0,
+  "raws": [
+    "1",
+    "1",
+    "1",
+    "1",
+    "1"
+  ],
+  "timestamp": "2026-06-04T18:37:13+09:00"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "control_outer",
+  "kind": "control",
+  "gt": 5,
+  "question": "이 이미지에서 가장 바깥(가장 큰) 표를 보라. '구분', '사업명', '항목', '기존', '변경'이 적힌 맨 윗 행은 세로 칸(셀)이 몇 개로 나뉘어 있는가? 숫자만 답하라.",
+  "media_resolution": "high",
+  "thinking_level": "low",
+  "temperature": 1.0,
+  "n": 5,
+  "answers": [
+    5,
+    5,
+    5,
+    5,
+    5
+  ],
+  "modal": 5,
+  "modal_count": 5,
+  "agreement": 1.0,
+  "distinct": 1,
+  "correct_rate": 1.0,
+  "raws": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "timestamp": "2026-06-04T17:55:00+09:00"
+}

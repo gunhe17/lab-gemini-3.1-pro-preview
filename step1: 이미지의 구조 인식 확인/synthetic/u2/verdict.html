@@ -1,0 +1,61 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"/><title>U2 판정</title><style>
+body{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;margin:0;padding:28px;
+  background:#f5f5f7;color:#1a1d24;max-width:920px;line-height:1.65;}
+a.back{font-size:13px;color:#1769d6;text-decoration:none;}
+article{background:#fff;border:1px solid #e2e2e6;border-radius:10px;padding:20px 26px;margin-top:12px;}
+h1{font-size:20px;} h2{font-size:16px;border-bottom:1px solid #e4e4e8;padding-bottom:5px;margin-top:26px;}
+h3{font-size:14px;margin-top:20px;color:#0a3;}
+code{background:#eef0f3;padding:1px 5px;border-radius:4px;font-family:ui-monospace,Menlo,monospace;font-size:12.5px;}
+pre{background:#0f1115;color:#c3e88d;padding:12px 14px;border-radius:8px;overflow:auto;font-size:12px;line-height:1.5;}
+pre code{background:none;color:inherit;padding:0;}
+details{background:#fafbfc;border:1px solid #e4e4e8;border-radius:7px;padding:6px 12px;margin:6px 0;}
+summary{cursor:pointer;font-weight:700;font-size:13px;}
+table{border-collapse:collapse;} th,td{border:1px solid #ddd;padding:5px 9px;font-size:13px;}
+th{background:#f0f1f4;} strong{color:#111;} ul{margin:6px 0;}
+</style></head><body><a class="back" href="../index.html">← 전체 인덱스</a><article><h1>U2 해리 검사 — s6-p011clone (지각 vs 생산)</h1>
+<p>model <code>gemini-3.1-pro-preview</code> · media_resolution=<code>high</code> · thinking=<code>low</code> · temperature=<code>1.0</code> · n=5
+HTML(U1)을 우회하고 개수만 물어 <strong>지각 단독</strong> 측정. 비교 기준: s6 high HTML 생산에서 그 줄을 <strong>2칸(colspan=2)으로 병합</strong>해 그림.</p>
+<table>
+<thead>
+<tr>
+<th>질문</th>
+<th>종류</th>
+<th style="text-align: center;">정답</th>
+<th>답 분포</th>
+<th style="text-align: center;">최빈(동의)</th>
+<th style="text-align: center;">정답률</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>control_outer</td>
+<td>control</td>
+<td style="text-align: center;">5</td>
+<td><code>[5, 5, 5, 5, 5]</code></td>
+<td style="text-align: center;">5 (5/5)</td>
+<td style="text-align: center;">1.00</td>
+</tr>
+<tr>
+<td>target_cells</td>
+<td>target</td>
+<td style="text-align: center;">3</td>
+<td><code>[2, 2, 2, 2, 2]</code></td>
+<td style="text-align: center;">2 (5/5)</td>
+<td style="text-align: center;">0.00</td>
+</tr>
+<tr>
+<td>target_lines</td>
+<td>target</td>
+<td style="text-align: center;">2</td>
+<td><code>[1, 1, 1, 2, 1]</code></td>
+<td style="text-align: center;">1 (4/5)</td>
+<td style="text-align: center;">0.20</td>
+</tr>
+</tbody>
+</table>
+<h2>자동 판정</h2>
+<p><strong>지각 실패 확정</strong> — 모델이 그 줄을 실제로 2칸 이하로 본다(modal=2, agree=1.00), HTML과 일치. → 픽셀에서 정보가 소실. <strong>전용/상위 모델 교체가 정당해진다.</strong>
+- 삼각측량: 칸 수 modal=2 ↔ 내부 세로선 modal=1 → 정합(칸=선+1) ✓</p>
+<blockquote>
+<p>주의: target이 정답이어도 (a) '지각 정상+직렬화 실패' 와 (b) '질문이 그 영역에 주의를 집중시켜 연산을 더 쓴 것' 두 해석이 가능. 다만 어느 쪽이든 '그 픽셀에서 정답 회수 가능' → 모델의 눈이 아니라 출력 방식을 바꾸는 쪽.</p>
+</blockquote></article></body></html>

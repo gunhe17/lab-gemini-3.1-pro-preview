@@ -1,0 +1,30 @@
+{
+  "model": "anthropic/claude-opus-4.8",
+  "id": "target_cells",
+  "kind": "target",
+  "gt": 3,
+  "n": 5,
+  "reasoning": {
+    "max_tokens": 6000
+  },
+  "answers": [
+    3,
+    2,
+    2,
+    2,
+    2
+  ],
+  "modal": 2,
+  "modal_count": 4,
+  "agreement": 0.8,
+  "distinct": 2,
+  "correct_rate": 0.2,
+  "raws": [
+    "3",
+    "2",
+    "2",
+    "2",
+    "2"
+  ],
+  "timestamp": "2026-06-05T04:59:22+09:00"
+}

@@ -1,0 +1,27 @@
+{
+  "model": "gemini-3.5-flash",
+  "id": "target_cells",
+  "kind": "target",
+  "gt": 3,
+  "n": 5,
+  "answers": [
+    2,
+    3,
+    2,
+    3,
+    3
+  ],
+  "modal": 3,
+  "modal_count": 3,
+  "agreement": 0.6,
+  "distinct": 2,
+  "correct_rate": 0.6,
+  "raws": [
+    "2",
+    "3",
+    "2",
+    "3",
+    "3"
+  ],
+  "timestamp": "2026-06-04T18:36:57+09:00"
+}

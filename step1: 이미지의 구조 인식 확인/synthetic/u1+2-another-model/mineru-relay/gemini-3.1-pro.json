@@ -1,0 +1,10 @@
+{
+  "model": "gemini-3.1-pro-preview",
+  "page": "s6-p011clone",
+  "input": "MinerU2.5-Pro output (text)",
+  "teds_struct": 0.40625,
+  "skeleton": "<table>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td colspan=\"3\"></td>\n    <td colspan=\"3\"></td>\n  </tr>\n  <tr>\n    <td rowspan=\"3\"></td>\n    <td rowspan=\"3\"></td>\n    <td rowspan=\"3\"></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td rowspan=\"2\"></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td colspan=\"3\"></td>\n    <td colspan=\"3\"></td>\n  </tr>\n</table>",
+  "raw": "<table>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td colspan=\"3\"></td>\n    <td colspan=\"3\"></td>\n  </tr>\n  <tr>\n    <td rowspan=\"3\"></td>\n    <td rowspan=\"3\"></td>\n    <td rowspan=\"3\"></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td rowspan=\"2\"></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td colspan=\"3\"></td>\n    <td colspan=\"3\"></td>\n  </tr>\n</table>",
+  "total_tokens": 577,
+  "timestamp": "2026-06-05T05:33:44+09:00"
+}

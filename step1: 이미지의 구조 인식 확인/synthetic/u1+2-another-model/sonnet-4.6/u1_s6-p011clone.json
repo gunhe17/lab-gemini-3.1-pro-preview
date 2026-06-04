@@ -1,0 +1,23 @@
+{
+  "model": "anthropic/claude-sonnet-4.6",
+  "page": "s6-p011clone",
+  "n": 5,
+  "temperature": 1.0,
+  "teds_mean": 0.3666666666666667,
+  "teds_std": 0.06666666666666665,
+  "teds_min": 0.33333333333333337,
+  "teds_max": 0.5,
+  "scores": [
+    0.5,
+    0.33333333333333337,
+    0.33333333333333337,
+    0.33333333333333337,
+    0.33333333333333337
+  ],
+  "modal_teds": 0.33333333333333337,
+  "agreement": 0.8,
+  "distinct": 2,
+  "modal_skeleton": "<table>\n  <tr>\n    <td rowspan=\"3\"></td>\n    <td rowspan=\"3\"></td>\n    <td rowspan=\"3\"></td>\n    <td colspan=\"3\">\n      <table>\n        <tr>\n          <td rowspan=\"2\"></td>\n          <td></td>\n          <td rowspan=\"2\"></td>\n        </tr>\n        <tr>\n          <td></td>\n        </tr>\n        <tr>\n          <td></td>\n          <td></td>\n          <td></td>\n        </tr>\n      </table>\n    </td>\n    <td colspan=\"3\">\n      <table>\n        <tr>\n          <td rowspan=\"2\"></td>\n          <td></td>\n          <td rowspan=\"2\"></td>\n        </tr>\n        <tr>\n          <td></td>\n        </tr>\n        <tr>\n          <td></td>\n          <td></td>\n          <td></td>\n        </tr>\n      </table>\n    </td>\n  </tr>\n  <tr>\n    <td colspan=\"3\"></td>\n    <td colspan=\"3\"></td>\n  </tr>\n</table>",
+  "cost_total_usd": 0.05583,
+  "timestamp": "2026-06-05T04:35:34+09:00"
+}

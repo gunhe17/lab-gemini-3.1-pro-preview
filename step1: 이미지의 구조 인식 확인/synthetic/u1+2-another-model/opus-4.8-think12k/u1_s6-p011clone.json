@@ -1,0 +1,26 @@
+{
+  "model": "anthropic/claude-opus-4.8",
+  "page": "s6-p011clone",
+  "n": 5,
+  "temperature": 1.0,
+  "teds_mean": 0.5277777777777778,
+  "teds_std": 0.18055555555555552,
+  "teds_min": 0.4375,
+  "teds_max": 0.8888888888888888,
+  "scores": [
+    0.4375,
+    0.8888888888888888,
+    0.4375,
+    0.4375,
+    0.4375
+  ],
+  "modal_teds": 0.4375,
+  "agreement": 0.8,
+  "distinct": 2,
+  "modal_skeleton": "<table>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td colspan=\"3\"></td>\n    <td colspan=\"3\"></td>\n  </tr>\n  <tr>\n    <td rowspan=\"3\"></td>\n    <td rowspan=\"3\"></td>\n    <td rowspan=\"3\"></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td colspan=\"3\"></td>\n    <td colspan=\"3\"></td>\n  </tr>\n</table>",
+  "reasoning": {
+    "max_tokens": 12000
+  },
+  "cost_total_usd": 0.33267,
+  "timestamp": "2026-06-05T04:57:39+09:00"
+}

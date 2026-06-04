@@ -1,0 +1,586 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"/><title>실행 로그 v1</title><style>
+body{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;margin:0;padding:28px;
+  background:#f5f5f7;color:#1a1d24;max-width:920px;line-height:1.65;}
+a.back{font-size:13px;color:#1769d6;text-decoration:none;}
+article{background:#fff;border:1px solid #e2e2e6;border-radius:10px;padding:20px 26px;margin-top:12px;}
+h1{font-size:20px;} h2{font-size:16px;border-bottom:1px solid #e4e4e8;padding-bottom:5px;margin-top:26px;}
+h3{font-size:14px;margin-top:20px;color:#0a3;}
+code{background:#eef0f3;padding:1px 5px;border-radius:4px;font-family:ui-monospace,Menlo,monospace;font-size:12.5px;}
+pre{background:#0f1115;color:#c3e88d;padding:12px 14px;border-radius:8px;overflow:auto;font-size:12px;line-height:1.5;}
+pre code{background:none;color:inherit;padding:0;}
+details{background:#fafbfc;border:1px solid #e4e4e8;border-radius:7px;padding:6px 12px;margin:6px 0;}
+summary{cursor:pointer;font-weight:700;font-size:13px;}
+table{border-collapse:collapse;} th,td{border:1px solid #ddd;padding:5px 9px;font-size:13px;}
+th{background:#f0f1f4;} strong{color:#111;} ul{margin:6px 0;}
+</style></head><body><a class="back" href="../../index.html">← 전체 인덱스</a><article><h1>U1 실행 로그 — v1</h1>
+<p>표 이미지 → 빈 셀 골격 HTML 추출. model <code>google/gemini-3.1-pro-preview</code> · params <code>{"temperature": 1.0, "max_tokens": 16000}</code> · thinking은 샘플별(low·medium·high).</p>
+<p>아래 <strong>LLM 입력 구성</strong>은 이 버전 모든 호출에 공통이고, 입력 이미지만 샘플별로 바뀐다.</p>
+<h2>LLM 입력 구성</h2>
+<details open><summary>① system</summary>
+
+
+<pre><code>너는 표 이미지의 '구조 골격'을 그대로 복원하는 정밀 도구다.
+셀 내용(텍스트)은 모두 빈칸으로 두고, &lt;table&gt;의 골격만 HTML로 출력한다.
+설명·머리말·코드펜스 없이 &lt;table&gt;...&lt;/table&gt; 만 출력한다.
+</code></pre>
+
+</details>
+
+<details><summary>② few-shot (0 shot)</summary>
+
+(없음 — zero-shot)
+</details>
+
+<details><summary>③ task (입력 지시 — 매 호출 이미지와 함께 전송)</summary>
+
+
+<pre><code>이 이미지의 표 구조를 빈 셀 HTML 골격으로 복원하라.
+
+규칙:
+- 셀 안의 텍스트는 절대 옮기지 마라. 모든 셀은 빈 &lt;td&gt;&lt;/td&gt; 로 둔다.
+- 보이는 병합을 rowspan/colspan 속성으로 그대로 표현하라. 격자를 가지런하게 다듬지 마라.
+- 표 안에 표가 있으면 &lt;td&gt; 안에 중첩 &lt;table&gt;로 표현하라. 깊이 제한 없이 재귀.
+- 보이는 것에만 근거하라. 일반적인 표 형태를 가정해 칸을 채우거나 정리하지 마라.
+- &lt;th&gt;/&lt;td&gt; 구분은 신경 쓰지 말고 전부 &lt;td&gt;로 써도 된다.
+
+&lt;table&gt;...&lt;/table&gt; 만 출력하라.
+</code></pre>
+
+</details>
+
+<hr />
+<h2>호출 기록 (입력 → 출력)</h2>
+<h3>s0-grid · thinking=low</h3>
+<ul>
+<li>시각: (기록 없음)</li>
+<li>입력 이미지: <code>png/s0-grid.png</code> (+ 위 system·task 공통)</li>
+<li>TEDS-Struct: <strong>1.000</strong></li>
+<li>토큰: total 1466 (reasoning 0) · $0.004382</li>
+</ul>
+<details><summary>출력 골격 HTML</summary>
+
+
+<pre><code class="language-html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+</details>
+
+<h3>s1-rowspan · thinking=low</h3>
+<ul>
+<li>시각: (기록 없음)</li>
+<li>입력 이미지: <code>png/s1-rowspan.png</code> (+ 위 system·task 공통)</li>
+<li>TEDS-Struct: <strong>1.000</strong></li>
+<li>토큰: total 1449 (reasoning 0) · $0.004048</li>
+</ul>
+<details><summary>출력 골격 HTML</summary>
+
+
+<pre><code class="language-html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+</details>
+
+<h3>s2-multihead · thinking=low</h3>
+<ul>
+<li>시각: (기록 없음)</li>
+<li>입력 이미지: <code>png/s2-multihead.png</code> (+ 위 system·task 공통)</li>
+<li>TEDS-Struct: <strong>1.000</strong></li>
+<li>토큰: total 1440 (reasoning 0) · $0.00445</li>
+</ul>
+<details><summary>출력 골격 HTML</summary>
+
+
+<pre><code class="language-html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+    &lt;td colspan=&quot;2&quot;&gt;&lt;/td&gt;
+    &lt;td colspan=&quot;2&quot;&gt;&lt;/td&gt;
+    &lt;td rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+</details>
+
+<h3>s3-form-bands · thinking=low</h3>
+<ul>
+<li>시각: (기록 없음)</li>
+<li>입력 이미지: <code>png/s3-form-bands.png</code> (+ 위 system·task 공통)</li>
+<li>TEDS-Struct: <strong>1.000</strong></li>
+<li>토큰: total 1523 (reasoning 0) · $0.005316</li>
+</ul>
+<details><summary>출력 골격 HTML</summary>
+
+
+<pre><code class="language-html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td colspan=&quot;6&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan=&quot;6&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+    &lt;td colspan=&quot;5&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan=&quot;5&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td colspan=&quot;5&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td colspan=&quot;5&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan=&quot;6&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+</details>
+
+<h3>s4-nested-asym · thinking=low</h3>
+<ul>
+<li>시각: (기록 없음)</li>
+<li>입력 이미지: <code>png/s4-nested-asym.png</code> (+ 위 system·task 공통)</li>
+<li>TEDS-Struct: <strong>1.000</strong></li>
+<li>토큰: total 1690 (reasoning 0) · $0.00736</li>
+</ul>
+<details><summary>출력 골격 HTML</summary>
+
+
+<pre><code class="language-html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;td colspan=&quot;2&quot;&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;td colspan=&quot;2&quot;&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+</details>
+
+<h3>s5-noruling · thinking=low</h3>
+<ul>
+<li>시각: (기록 없음)</li>
+<li>입력 이미지: <code>png/s5-noruling.png</code> (+ 위 system·task 공통)</li>
+<li>TEDS-Struct: <strong>1.000</strong></li>
+<li>토큰: total 1450 (reasoning 0) · $0.00419</li>
+</ul>
+<details><summary>출력 골격 HTML</summary>
+
+
+<pre><code class="language-html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+    &lt;td colspan=&quot;2&quot;&gt;&lt;/td&gt;
+    &lt;td colspan=&quot;2&quot;&gt;&lt;/td&gt;
+    &lt;td rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+</details>
+
+<h3>s6-p011clone · thinking=low</h3>
+<ul>
+<li>시각: (기록 없음)</li>
+<li>입력 이미지: <code>png/s6-p011clone.png</code> (+ 위 system·task 공통)</li>
+<li>TEDS-Struct: <strong>0.219</strong></li>
+<li>토큰: total 1419 (reasoning 0) · $0.004258</li>
+</ul>
+<details><summary>출력 골격 HTML</summary>
+
+
+<pre><code class="language-html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td rowspan=&quot;4&quot;&gt;&lt;/td&gt;
+    &lt;td rowspan=&quot;4&quot;&gt;&lt;/td&gt;
+    &lt;td rowspan=&quot;4&quot;&gt;&lt;/td&gt;
+    &lt;td colspan=&quot;3&quot;&gt;&lt;/td&gt;
+    &lt;td colspan=&quot;3&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan=&quot;2&quot;&gt;&lt;/td&gt;
+    &lt;td rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+    &lt;td colspan=&quot;2&quot;&gt;&lt;/td&gt;
+    &lt;td rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan=&quot;3&quot;&gt;&lt;/td&gt;
+    &lt;td colspan=&quot;3&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+</details>
+
+<h3>s6-p011clone · thinking=medium</h3>
+<ul>
+<li>시각: (기록 없음)</li>
+<li>입력 이미지: <code>png/s6-p011clone.png</code> (+ 위 system·task 공통)</li>
+<li>TEDS-Struct: <strong>0.875</strong></li>
+<li>토큰: total 3380 (reasoning 1958) · $0.02779</li>
+</ul>
+<details><summary>출력 골격 HTML</summary>
+
+
+<pre><code class="language-html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;td colspan=&quot;2&quot;&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;td colspan=&quot;2&quot;&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+</details>
+
+<h3>s6-p011clone · thinking=high</h3>
+<ul>
+<li>시각: (기록 없음)</li>
+<li>입력 이미지: <code>png/s6-p011clone.png</code> (+ 위 system·task 공통)</li>
+<li>TEDS-Struct: <strong>0.875</strong></li>
+<li>토큰: total 5568 (reasoning 4146) · $0.054046</li>
+</ul>
+<details><summary>출력 골격 HTML</summary>
+
+
+<pre><code class="language-html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;td colspan=&quot;2&quot;&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;td colspan=&quot;2&quot;&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+</details></article></body></html>

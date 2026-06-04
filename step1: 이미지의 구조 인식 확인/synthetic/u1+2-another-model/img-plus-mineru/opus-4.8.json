@@ -1,0 +1,10 @@
+{
+  "model": "anthropic/claude-opus-4.8",
+  "page": "s6-p011clone",
+  "input": "이미지 + MinerU 참고HTML",
+  "teds_struct": 0.4375,
+  "skeleton": "<table>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td colspan=\"3\"></td>\n    <td colspan=\"3\"></td>\n  </tr>\n  <tr>\n    <td rowspan=\"3\"></td>\n    <td rowspan=\"3\"></td>\n    <td rowspan=\"3\"></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td colspan=\"3\"></td>\n    <td colspan=\"3\"></td>\n  </tr>\n</table>",
+  "raw": "<table>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n<td colspan=\"3\"></td>\n<td colspan=\"3\"></td>\n</tr>\n<tr>\n<td rowspan=\"3\"></td>\n<td rowspan=\"3\"></td>\n<td rowspan=\"3\"></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td colspan=\"3\"></td>\n<td colspan=\"3\"></td>\n</tr>\n</table>",
+  "total_tokens": 6451,
+  "timestamp": "2026-06-05T05:37:12+09:00"
+}

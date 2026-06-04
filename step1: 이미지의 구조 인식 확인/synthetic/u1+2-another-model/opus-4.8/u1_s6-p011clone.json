@@ -1,0 +1,23 @@
+{
+  "model": "anthropic/claude-opus-4.8",
+  "page": "s6-p011clone",
+  "n": 5,
+  "temperature": 1.0,
+  "teds_mean": 0.3875,
+  "teds_std": 0.06434768838116875,
+  "teds_min": 0.28125,
+  "teds_max": 0.4375,
+  "scores": [
+    0.34375,
+    0.4375,
+    0.28125,
+    0.4375,
+    0.4375
+  ],
+  "modal_teds": 0.34375,
+  "agreement": 0.2,
+  "distinct": 5,
+  "modal_skeleton": "<table>\n  <tr>\n    <td rowspan=\"3\"></td>\n    <td rowspan=\"3\"></td>\n    <td rowspan=\"3\"></td>\n    <td colspan=\"3\"></td>\n    <td colspan=\"3\"></td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td rowspan=\"2\"></td>\n    <td></td>\n    <td></td>\n    <td rowspan=\"2\"></td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td colspan=\"3\"></td>\n    <td colspan=\"3\"></td>\n  </tr>\n</table>",
+  "cost_total_usd": 0.10028,
+  "timestamp": "2026-06-05T04:36:22+09:00"
+}

@@ -1,0 +1,20 @@
+{
+  "model": "gemini-3-flash-preview",
+  "page": "s4-nested-asym",
+  "mr": "high",
+  "n": 3,
+  "teds_mean": 1.0,
+  "teds_std": 0.0,
+  "teds_min": 1.0,
+  "teds_max": 1.0,
+  "scores": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "modal_teds": 1.0,
+  "agreement": 1.0,
+  "distinct": 1,
+  "modal_skeleton": "<table>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\"></td>\n    <td></td>\n    <td>\n      <table>\n        <tr>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td></td>\n          <td></td>\n        </tr>\n      </table>\n    </td>\n    <td>\n      <table>\n        <tr>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td></td>\n          <td></td>\n        </tr>\n      </table>\n    </td>\n    <td></td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>\n      <table>\n        <tr>\n          <td colspan=\"2\"></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td></td>\n          <td></td>\n          <td></td>\n        </tr>\n      </table>\n    </td>\n    <td>\n      <table>\n        <tr>\n          <td colspan=\"2\"></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td></td>\n          <td></td>\n          <td></td>\n        </tr>\n      </table>\n    </td>\n    <td></td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td>\n      <table>\n        <tr>\n          <td></td>\n          <td></td>\n          <td></td>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td></td>\n          <td></td>\n          <td></td>\n          <td></td>\n          <td></td>\n        </tr>\n      </table>\n    </td>\n    <td>\n      <table>\n        <tr>\n          <td></td>\n          <td></td>\n          <td></td>\n          <td></td>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td></td>\n          <td></td>\n          <td></td>\n          <td></td>\n          <td></td>\n          <td></td>\n        </tr>\n      </table>\n    </td>\n    <td></td>\n  </tr>\n</table>",
+  "timestamp": "2026-06-04T18:29:57+09:00"
+}

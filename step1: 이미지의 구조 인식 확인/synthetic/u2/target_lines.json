@@ -1,0 +1,30 @@
+{
+  "id": "target_lines",
+  "kind": "target",
+  "gt": 2,
+  "question": "이 이미지의 '기존' 칸 안 작은 표에서, '㉔ 위기관리 지원' 목록이 든 맨 윗줄을 보라. 그 줄에서 칸과 칸을 좌우로 가르는 '안쪽' 세로 구분선은 몇 개 보이는가? (바깥 테두리 선은 제외) 숫자만 답하라.",
+  "media_resolution": "high",
+  "thinking_level": "low",
+  "temperature": 1.0,
+  "n": 5,
+  "answers": [
+    1,
+    1,
+    1,
+    2,
+    1
+  ],
+  "modal": 1,
+  "modal_count": 4,
+  "agreement": 0.8,
+  "distinct": 2,
+  "correct_rate": 0.2,
+  "raws": [
+    "1",
+    "1",
+    "1",
+    "2",
+    "1"
+  ],
+  "timestamp": "2026-06-04T17:55:58+09:00"
+}

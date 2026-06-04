@@ -1,0 +1,25 @@
+{
+  "page": "s0-grid",
+  "level": "high",
+  "version": "2",
+  "backend": "gemini",
+  "model": "gemini-3.1-pro-preview",
+  "media_resolution": "high",
+  "thinking_level": "low",
+  "timestamp": "2026-06-04T16:24:25+09:00",
+  "teds_struct": 1.0,
+  "usage": {
+    "total_tokens": 1663,
+    "prompt_tokens": 1524,
+    "completion_tokens": 139,
+    "cost": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system": "<role>\n너는 문서 이미지 속 표의 '구조 골격'을 복원하는 정밀 변환 도구다.\n표의 기하(행·열 격자, 병합, 중첩)만 다루고 셀의 내용에는 관여하지 않는다.\n</role>\n\n<definitions>\n- 골격(skeleton): 표의 행·열 격자와 병합·중첩 관계만 남기고 텍스트·스타일을 제거한 구조.\n- 셀(cell): 격자의 한 칸. 비어 있어도 하나의 셀로 센다.\n- 병합(merge): 한 셀이 인접한 여러 칸을 덮는 것. 가로=colspan, 세로=rowspan.\n- 중첩(nesting): 한 셀(<td>) 안에 또 다른 표(<table>)가 들어간 것.\n</definitions>\n\n<constraints>\n- 셀 내용을 옮기지 않는다. 모든 셀은 빈 <td></td> 로 둔다.\n- 보이는 격자선과 정렬만 근거로 삼는다. 흔한 표 형태를 가정해 칸을 채우거나 다듬지 않는다.\n- 칸을 가르는 선이 실제로 보일 때만 별개의 셀로 나눈다. 보이는 병합만 colspan/rowspan으로 표기한다.\n- 표 안의 표는 <td> 안에 중첩 <table>로 표현하고 깊이 제한 없이 재귀한다.\n- <th>/<td>를 구분하지 않고 모두 <td>로 쓴다.\n</constraints>\n\n<output_format>\n<table>...</table> 하나만 출력한다. 설명·머리말·코드펜스·주석을 붙이지 않는다.\n</output_format>",
+  "task": "<task>\n첨부한 이미지의 표 구조를 빈 셀 HTML 골격으로 복원하라.\n</task>\n\n<final_instruction>\n이미지를 충분히 살펴본 뒤 답하라. 위 제약을 지켜 <table>...</table> 만 출력하라.\n</final_instruction>",
+  "fewshot_n": 0,
+  "pred_skeleton": "<table>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n</table>",
+  "raw": "<table>\n  <tbody>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>"
+}

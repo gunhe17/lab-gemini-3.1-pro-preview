@@ -1,0 +1,23 @@
+{
+  "model": "MinerU2.5-Pro (opendatalab/MinerU2.5-Pro-2604-1.2B)",
+  "page": "s6-p011clone",
+  "mr": "native",
+  "n": 1,
+  "teds_mean": 0.40625,
+  "teds_std": 0.0,
+  "teds_min": 0.40625,
+  "teds_max": 0.40625,
+  "scores": [
+    0.40625
+  ],
+  "modal_teds": 0.40625,
+  "agreement": 1.0,
+  "distinct": 1,
+  "modal_skeleton": "<table>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td colspan=\"3\"></td>\n    <td colspan=\"3\"></td>\n  </tr>\n  <tr>\n    <td rowspan=\"3\"></td>\n    <td rowspan=\"3\"></td>\n    <td rowspan=\"3\"></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td rowspan=\"2\"></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td colspan=\"3\"></td>\n    <td colspan=\"3\"></td>\n  </tr>\n</table>",
+  "encoding": "flat (colspan/rowspan, 9열)",
+  "perception_empty_cells": "부분 — 상단 본문 행은 [빈|내용|빈] 분리하나, rowspan(3/2) 불일치",
+  "errors": "표 아래 '② 서비스 제공절차' 산문을 표의 4번째 행(colspan3)으로 흡수 + rowspan 불일치",
+  "backend": "Colab GPU, transformers + mineru_vl_utils.two_step_extract",
+  "note": "평탄 인코딩이라 중첩 GT 기준 과소평가. PaddleOCR(0.531)보다 낮은 건 prose-as-row 오류 때문.",
+  "timestamp": "2026-06-05T04:39:58+09:00"
+}

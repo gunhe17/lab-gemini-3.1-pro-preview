@@ -1,0 +1,14 @@
+{
+  "PaddleOCR-VL-1.6": {
+    "raw_teds_nested_gt": 0.531,
+    "encoding": "flat (9열, colspan/rowspan)",
+    "perception_empty_cells": "정확 — [빈칸|내용|빈칸] 3칸 분리 (Gemini가 병합한 빈칸을 포착)",
+    "layout_detection": "PP-DocLayout가 s6를 {table:1, paragraph_title:2, text:6}로 분리 검출 (표+주변 텍스트 정확 분리)",
+    "runs": "0.53125 동일 — 호스티드 = 로컬 CPU = Colab CPU = Colab GPU = HF Space 직접호출. 5경로 재현 확정",
+    "note": "평탄 9열은 중첩 GT와 같은 격자의 다른 인코딩. 나이브 TEDS(중첩 기준)는 표현 컨벤션 차이로 과소평가 — 구조 자체는 충실."
+  },
+  "MinerU2.5": {
+    "raw_teds_nested_gt": null,
+    "note": "미측정 (호스티드/Colab 대기)"
+  }
+}

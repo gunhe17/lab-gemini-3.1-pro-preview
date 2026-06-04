@@ -1,0 +1,29 @@
+{
+  "model": "PaddleOCR-VL-1.6",
+  "page": "s6-p011clone",
+  "mr": "native",
+  "n": 1,
+  "teds_mean": 0.53125,
+  "teds_std": 0.0,
+  "teds_min": 0.53125,
+  "teds_max": 0.53125,
+  "scores": [
+    0.53125
+  ],
+  "modal_teds": 0.53125,
+  "agreement": 1.0,
+  "distinct": 1,
+  "modal_skeleton": "<table>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td colspan=\"3\"></td>\n    <td colspan=\"3\"></td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\"></td>\n    <td rowspan=\"2\"></td>\n    <td rowspan=\"2\"></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n</table>",
+  "encoding": "flat (colspan/rowspan, 9열)",
+  "perception_empty_cells": "정확 — [빈칸|내용|빈칸] 3칸 분리 (Gemini가 병합한 빈칸 포착)",
+  "layout_detection": "{table:1, paragraph_title:2, text:6}",
+  "reproduced_paths": [
+    "hosted demo",
+    "local M1 CPU(적재)",
+    "Colab CPU",
+    "Colab GPU(features)",
+    "HF Space gradio_client"
+  ],
+  "note": "나이브 TEDS는 중첩 GT 기준이라 평탄 인코딩을 과소평가. 격자 자체는 정답과 동치(평탄화 시 일치).",
+  "timestamp": "2026-06-05T04:18:55+09:00"
+}

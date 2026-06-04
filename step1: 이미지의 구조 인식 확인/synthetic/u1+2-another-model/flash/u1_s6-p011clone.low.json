@@ -1,0 +1,22 @@
+{
+  "model": "gemini-3-flash-preview",
+  "page": "s6-p011clone",
+  "mr": "low",
+  "n": 5,
+  "teds_mean": 0.6625,
+  "teds_std": 0.1015504800579495,
+  "teds_min": 0.5,
+  "teds_max": 0.8125,
+  "scores": [
+    0.6875,
+    0.8125,
+    0.6875,
+    0.625,
+    0.5
+  ],
+  "modal_teds": 0.6875,
+  "agreement": 0.4,
+  "distinct": 4,
+  "modal_skeleton": "<table>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>\n      <table>\n        <tr>\n          <td colspan=\"3\"></td>\n        </tr>\n        <tr>\n          <td></td>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td colspan=\"3\"></td>\n        </tr>\n      </table>\n    </td>\n    <td>\n      <table>\n        <tr>\n          <td colspan=\"3\"></td>\n        </tr>\n        <tr>\n          <td></td>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td colspan=\"3\"></td>\n        </tr>\n      </table>\n    </td>\n  </tr>\n</table>",
+  "timestamp": "2026-06-04T18:27:47+09:00"
+}

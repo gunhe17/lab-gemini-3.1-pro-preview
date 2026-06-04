@@ -1,0 +1,30 @@
+{
+  "id": "target_cells",
+  "kind": "target",
+  "gt": 3,
+  "question": "이 이미지의 '기존' 칸 안에는 작은 표가 하나 들어 있다. 그 작은 표에서 '㉔ 위기관리 지원' 글머리 목록이 들어 있는 맨 윗줄을 보라. 그 줄은 세로 칸(셀)이 몇 개로 나뉘어 있는가? 숫자만 답하라.",
+  "media_resolution": "high",
+  "thinking_level": "low",
+  "temperature": 1.0,
+  "n": 5,
+  "answers": [
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "modal": 2,
+  "modal_count": 5,
+  "agreement": 1.0,
+  "distinct": 1,
+  "correct_rate": 0.0,
+  "raws": [
+    "2",
+    "2",
+    "2",
+    "2",
+    "2"
+  ],
+  "timestamp": "2026-06-04T17:55:28+09:00"
+}

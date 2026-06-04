@@ -1,0 +1,30 @@
+{
+  "model": "anthropic/claude-opus-4.8",
+  "id": "control_outer",
+  "kind": "control",
+  "gt": 5,
+  "n": 5,
+  "reasoning": {
+    "max_tokens": 6000
+  },
+  "answers": [
+    5,
+    5,
+    5,
+    5,
+    5
+  ],
+  "modal": 5,
+  "modal_count": 5,
+  "agreement": 1.0,
+  "distinct": 1,
+  "correct_rate": 1.0,
+  "raws": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "5"
+  ],
+  "timestamp": "2026-06-05T04:59:04+09:00"
+}

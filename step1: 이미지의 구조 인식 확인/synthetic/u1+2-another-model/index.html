@@ -1,0 +1,33 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"/>
+<title>모델 비교 — u1·u2 재시험</title><style>
+body{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;margin:0;padding:28px;background:#f5f5f7;color:#111;max-width:1000px;}
+h1{font-size:21px;margin:0 0 4px;} .sub{color:#666;font-size:13px;margin:0 0 20px;}
+h2{font-size:16px;margin:24px 0 6px;border-bottom:2px solid #d8d9de;padding-bottom:5px;}
+table{border-collapse:collapse;width:100%;font-size:13px;margin:0 0 8px;background:#fff;}
+th,td{border:1px solid #e0e0e0;padding:7px 10px;text-align:center;} th{background:#f0f1f4;}
+td.l,th.l{text-align:left;} .cur{background:#fbf3f3;} .win{color:#2a8f2a;font-weight:700;} .lose{color:#c0392b;}
+.mut{color:#888;font-size:11px;} .note{font-size:12px;color:#555;border-left:3px solid #ccc;padding-left:10px;margin:6px 0 16px;}
+.tag{font-size:11px;color:#888;font-weight:400;}
+.box{background:#0f1115;color:#e6e8ec;border-radius:10px;padding:14px 20px;margin:0 0 16px;}
+.box b{color:#7cff9b;} .box ul{margin:8px 0 0;padding-left:18px;} .box li{margin:6px 0;line-height:1.55;font-size:13px;}
+.box b{color:#fff;} .box li b{color:#7cff9b;}
+table.lb{max-width:420px;} table.lb td{text-align:right;} table.lb td.l{text-align:left;}
+</style></head><body>
+<h1>다른 Gemini 모델로 u1·u2 재시험</h1>
+<p class="sub">동일 조건(프롬프트 v1.1 · thinking=low · temperature=1.0 · n=5) · 입력 s6/s4 ·
+<a href="../index.html">← 전체 인덱스</a></p>
+<div class="box"><b>요약</b><ul><li>구조(s6 high): gemini-3-flash <b>0.875±0.000</b> vs 현재 0.850±0.050 → <b>+0.025</b>, 분산 0.050→0.000. flash가 더 높고 더 안정 — 단 modal 천장 0.875는 동일.</li><li>지각(target_cells, 정답 3): 현재 modal 2(100%) · flash modal 2(80%) — 한 번 '3' 회수. → 두 모델 다 주로 '2'(빈칸 병합). <b>지각 한계는 대체로 공유</b> — 교체만으론 천장 못 뚫음.</li><li>gemini-3.5-flash 역설: 지각 target_cells modal <b>3</b>(60%) — <b>처음으로 '3' 다수 회수</b>(지각은 모델 의존·개선 가능). 그런데 구조 s6 high는 0.815±0.138로 <b>가장 불안정</b>(동의 1/5)이고 target_lines는 여전히 1 → 지각이 일관되지 않아 더 나은 출력으로 이어지지 않음.</li><li>결론: <b>실용 최선은 gemini-3-flash</b> — 0.875 modal을 5/5(σ=0)로 신뢰, 더 싸고, 리더보드 1위. 3.5-flash는 더 새것이나 표 구조는 더 불안정(리더보드 미수록과 일치). 단 <b>어느 모델도 0.875 천장(빈칸 병합)은 못 뚫음</b> → 그 잔여는 <b>VLM + 결정론적 선검출 하이브리드</b>로만 해결.</li></ul></div>
+<p class="note">⚠ gemini-3-pro-preview는 404 NOT_FOUND(폐기)로 테스트 불가 — 최신 gemini-3.5-flash로 대체.</p>
+
+<h2>u1 — 구조 골격 TEDS <span class="tag">평균±σ (높을수록 좋음 · ▲/▼=현재 대비)</span></h2>
+<table><thead><tr><th class="l">모델</th><th>s6 · mr=low</th><th>s6 · mr=medium</th><th>s6 · mr=high</th><th>s4 · high(대조)</th></tr></thead><tbody><tr class=cur><td class="l">gemini-3.1-pro (현재)</td><td class="">0.458 ± 0.126</td><td class="">0.735 ± 0.128</td><td class="">0.850 ± 0.050</td><td class="">1.000 ± 0.000</td></tr><tr><td class="l">gemini-3-flash</td><td class="win">0.662 ± 0.102 <span class="mut">▲+0.204</span></td><td class="win">0.825 ± 0.061 <span class="mut">▲+0.090</span></td><td class="win">0.875 ± 0.000 <span class="mut">▲+0.025</span></td><td class="">1.000 ± 0.000</td></tr><tr><td class="l">gemini-3.5-flash</td><td class="win">0.481 ± 0.195 <span class="mut">▲+0.023</span></td><td class="lose">0.675 ± 0.115 <span class="mut">▼-0.060</span></td><td class="lose">0.815 ± 0.138 <span class="mut">▼-0.035</span></td><td class="">1.000 ± 0.000</td></tr></tbody></table>
+
+<h2>u2 — 해리 검사(지각) <span class="tag">개수 질문 최빈답 (정답 일치=초록 · 괄호=동의율)</span></h2>
+<p class="note">핵심 <b>target_cells</b>(중첩표 윗줄 칸 수, 정답 3): 현재 3.1-pro는 5/5로 '2'(빈칸 병합)=지각 실패.</p>
+<table><thead><tr><th class="l">모델</th><th>control_outer<br><span class="tag">정답 5</span></th><th>target_cells<br><span class="tag">정답 3</span></th><th>target_lines<br><span class="tag">정답 2</span></th></tr></thead><tbody><tr class=cur><td class="l">gemini-3.1-pro (현재)</td><td class="win">5 <span class="mut">(100%)</span></td><td class="lose">2 <span class="mut">(100%)</span></td><td class="lose">1 <span class="mut">(80%)</span></td></tr><tr><td class="l">gemini-3-flash</td><td class="win">5 <span class="mut">(100%)</span></td><td class="lose">2 <span class="mut">(80%)</span></td><td class="lose">1 <span class="mut">(100%)</span></td></tr><tr><td class="l">gemini-3.5-flash</td><td class="win">5 <span class="mut">(100%)</span></td><td class="win">3 <span class="mut">(60%)</span></td><td class="lose">1 <span class="mut">(100%)</span></td></tr></tbody></table>
+
+<h2>전용 파서 (s6) <span class="tag">⚠ 나이브 TEDS는 중첩 GT 기준 — 평탄 인코딩을 과소평가</span></h2><p class="note">PaddleOCR-VL-1.6은 s6를 <b>평탄 9열</b>로 파싱(같은 격자의 다른 인코딩). 나이브 TEDS 0.531은 Gemini의 0.875와 직접 비교 불가 — 컨벤션 차이일 뿐. <b>핵심: 본문 행을 [빈칸|내용|빈칸]으로 분리해, U2에서 Gemini가 병합(2칸)한 빈 칸을 정확히 포착.</b> 공정 비교엔 표현 정규화(flatten-then-TEDS) 필요.</p><table><thead><tr><th class="l">모델</th><th>나이브 TEDS<br><span class="tag">중첩 GT 기준</span></th><th class="l">인코딩</th><th class="l">빈칸 지각</th></tr></thead><tbody><tr><td class="l">PaddleOCR-VL-1.6</td><td>0.531</td><td class="l">flat (9열, colspan/rowspan)</td><td class="l">정확 — [빈칸|내용|빈칸] 3칸 분리 (Gemini가 병합한 빈칸을 포착)</td></tr><tr><td class="l">MinerU2.5</td><td>—</td><td class="l">—</td><td class="l">—</td></tr></tbody></table>
+
+<h2>참고 — OmniDocBench TEDS-S 리더보드</h2>
+<table class='lb'><thead><tr><th class='l'>OmniDocBench TEDS-S</th><th>점수</th></tr></thead><tbody><tr><td class='l'>Gemini-3-Flash</td><td>92.6</td></tr><tr><td class='l'>Gemini-3-Pro <span class='mut'>(폐기·테스트불가)</span></td><td>91.7</td></tr><tr class='cur'><td class='l'>Gemini-3.1-Pro (현재)</td><td>85.4</td></tr><tr><td class='l'>Gemini-3.5-Flash</td><td class='mut'>리더보드 미수록</td></tr></tbody></table>
+</body></html>
