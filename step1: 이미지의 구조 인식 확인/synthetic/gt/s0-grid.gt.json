@@ -1,0 +1,189 @@
+{
+  "id": "s0-grid",
+  "source": "s0-grid.html",
+  "skeleton": {
+    "type": "table",
+    "columns": 5,
+    "row_count": 5,
+    "col_normalized_consistent": true,
+    "row_fill": [
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "rows": [
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "항목"
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "1분기"
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "2분기"
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "3분기"
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "4분기"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "예산액"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "12,000"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "12,000"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "12,000"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "12,000"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "집행액"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "9,820"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "11,140"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "10,505"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "12,000"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "집행률"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "81.8%"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "92.8%"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "87.5%"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "100.0%"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "잔액"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "2,180"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "860"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "1,495"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "0"
+          }
+        ]
+      }
+    ]
+  }
+}

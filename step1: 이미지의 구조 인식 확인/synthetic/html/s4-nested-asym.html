@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<!-- s4-nested-asym (L4) : +C4 셀 내 중첩표 +C5 비대칭 형제 중첩표 +C2 행그룹 +C3 중첩 colspan헤더.
+     2024 칸과 2025 칸의 중첩표가 열 수가 다름(5열 vs 6열) = 비대칭. p-007 유형 -->
+<style>
+  body{margin:0;background:#fff;font-family:'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;color:#000;}
+  .doc{display:inline-block;padding:20px;}
+  h2{text-align:center;font-size:17px;margin:0 0 10px;}
+  table{border-collapse:collapse;font-size:12px;}
+  table.outer{width:880px;}
+  td,th{border:1px solid #333;padding:5px 7px;vertical-align:middle;line-height:1.45;}
+  th{background:#dcdcdc;text-align:center;font-weight:700;}
+  .rh{background:#efefef;text-align:center;font-weight:700;}
+  table.inner{width:100%;margin:0;font-size:11px;}
+  table.inner td,table.inner th{padding:3px 5px;}
+  .num{text-align:center;}
+</style>
+</head>
+<body>
+<div class="doc">
+<h2>연도별 주요 변경 내용 비교</h2>
+<table class="outer">
+  <tr>
+    <th>구분</th><th>page</th><th>2024년</th><th>2025년</th><th>비고</th>
+  </tr>
+
+  <!-- 그룹 Ⅰ : 구분 셀이 2개 본문 행을 rowspan으로 묶음 -->
+  <tr>
+    <th class="rh" rowspan="2">Ⅰ. 사업 개요</th>
+    <th class="rh">16</th>
+    <td>
+      <table class="inner">
+        <tr><th>구분</th><th>내용</th></tr>
+        <tr><td>지원단가</td><td>12,140원</td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="inner">
+        <tr><th>구분</th><th>내용</th></tr>
+        <tr><td>지원단가</td><td>14,140원</td></tr>
+      </table>
+    </td>
+    <td>기준 금액 명확화</td>
+  </tr>
+  <tr>
+    <th class="rh">17</th>
+    <td>
+      <table class="inner">
+        <tr><th colspan="2">추진주체</th><th>기능</th></tr>
+        <tr><td>시·군·구</td><td>복지 담당</td><td>대상자 선정·통보</td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="inner">
+        <tr><th colspan="2">추진주체</th><th>기능</th></tr>
+        <tr><td>시·군·구</td><td>복지 담당</td><td>선정결과 통보 명확화</td></tr>
+      </table>
+    </td>
+    <td>추진체계 절차 명확화</td>
+  </tr>
+
+  <!-- 그룹 Ⅱ : 비대칭 중첩표 (2024=5열 / 2025=6열) -->
+  <tr>
+    <th class="rh">Ⅱ. 지원 대상</th>
+    <th class="rh">21</th>
+    <td>
+      <table class="inner">
+        <tr><th>가구원수</th><th>2인</th><th>3인</th><th>4인</th><th>5인</th></tr>
+        <tr><td>중위 120%</td><td class="num">4,420</td><td class="num">5,658</td><td class="num">6,876</td><td class="num">8,035</td></tr>
+      </table>
+    </td>
+    <td>
+      <table class="inner">
+        <tr><th>가구원수</th><th>2인</th><th>3인</th><th>4인</th><th>5인</th><th>6인</th></tr>
+        <tr><td>중위 120%</td><td class="num">4,720</td><td class="num">6,031</td><td class="num">7,318</td><td class="num">8,530</td><td class="num">9,678</td></tr>
+      </table>
+    </td>
+    <td>중위소득 기준 현행화</td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

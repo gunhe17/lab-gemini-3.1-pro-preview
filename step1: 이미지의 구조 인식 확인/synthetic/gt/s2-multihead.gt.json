@@ -1,0 +1,195 @@
+{
+  "id": "s2-multihead",
+  "source": "s2-multihead.html",
+  "skeleton": {
+    "type": "table",
+    "columns": 6,
+    "row_count": 5,
+    "col_normalized_consistent": true,
+    "row_fill": [
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "rows": [
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 2,
+            "text": "기관명"
+          },
+          {
+            "type": "label",
+            "col_span": 2,
+            "row_span": 1,
+            "text": "정량평가"
+          },
+          {
+            "type": "label",
+            "col_span": 2,
+            "row_span": 1,
+            "text": "정성평가"
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 2,
+            "text": "종합등급"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "점수"
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "등급"
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "점수"
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "등급"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "가나복지관"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "92"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "A"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "88"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "B"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "A"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "다라센터"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "78"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "C"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "85"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "B"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "B"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "마바재단"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "95"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "A"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "91"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "A"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "A"
+          }
+        ]
+      }
+    ]
+  }
+}

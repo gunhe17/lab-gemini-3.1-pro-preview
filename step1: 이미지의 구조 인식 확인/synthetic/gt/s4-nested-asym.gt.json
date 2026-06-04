@@ -1,0 +1,484 @@
+{
+  "id": "s4-nested-asym",
+  "source": "s4-nested-asym.html",
+  "skeleton": {
+    "type": "table",
+    "columns": 5,
+    "row_count": 4,
+    "col_normalized_consistent": true,
+    "row_fill": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "rows": [
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "구분"
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "page"
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "2024년"
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "2025년"
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "비고"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 2,
+            "text": "Ⅰ. 사업 개요"
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "16"
+          },
+          {
+            "type": "table",
+            "columns": 2,
+            "row_count": 2,
+            "col_normalized_consistent": true,
+            "row_fill": [
+              2,
+              2
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "type": "label",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "구분"
+                  },
+                  {
+                    "type": "label",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "내용"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "text",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "지원단가"
+                  },
+                  {
+                    "type": "text",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "12,140원"
+                  }
+                ]
+              }
+            ],
+            "col_span": 1,
+            "row_span": 1
+          },
+          {
+            "type": "table",
+            "columns": 2,
+            "row_count": 2,
+            "col_normalized_consistent": true,
+            "row_fill": [
+              2,
+              2
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "type": "label",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "구분"
+                  },
+                  {
+                    "type": "label",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "내용"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "text",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "지원단가"
+                  },
+                  {
+                    "type": "text",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "14,140원"
+                  }
+                ]
+              }
+            ],
+            "col_span": 1,
+            "row_span": 1
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "기준 금액 명확화"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "17"
+          },
+          {
+            "type": "table",
+            "columns": 3,
+            "row_count": 2,
+            "col_normalized_consistent": true,
+            "row_fill": [
+              3,
+              3
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "type": "label",
+                    "col_span": 2,
+                    "row_span": 1,
+                    "text": "추진주체"
+                  },
+                  {
+                    "type": "label",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "기능"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "text",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "시·군·구"
+                  },
+                  {
+                    "type": "text",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "복지 담당"
+                  },
+                  {
+                    "type": "text",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "대상자 선정·통보"
+                  }
+                ]
+              }
+            ],
+            "col_span": 1,
+            "row_span": 1
+          },
+          {
+            "type": "table",
+            "columns": 3,
+            "row_count": 2,
+            "col_normalized_consistent": true,
+            "row_fill": [
+              3,
+              3
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "type": "label",
+                    "col_span": 2,
+                    "row_span": 1,
+                    "text": "추진주체"
+                  },
+                  {
+                    "type": "label",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "기능"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "text",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "시·군·구"
+                  },
+                  {
+                    "type": "text",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "복지 담당"
+                  },
+                  {
+                    "type": "text",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "선정결과 통보 명확화"
+                  }
+                ]
+              }
+            ],
+            "col_span": 1,
+            "row_span": 1
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "추진체계 절차 명확화"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "Ⅱ. 지원 대상"
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "21"
+          },
+          {
+            "type": "table",
+            "columns": 5,
+            "row_count": 2,
+            "col_normalized_consistent": true,
+            "row_fill": [
+              5,
+              5
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "type": "label",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "가구원수"
+                  },
+                  {
+                    "type": "label",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "2인"
+                  },
+                  {
+                    "type": "label",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "3인"
+                  },
+                  {
+                    "type": "label",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "4인"
+                  },
+                  {
+                    "type": "label",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "5인"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "text",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "중위 120%"
+                  },
+                  {
+                    "type": "text",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "4,420"
+                  },
+                  {
+                    "type": "text",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "5,658"
+                  },
+                  {
+                    "type": "text",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "6,876"
+                  },
+                  {
+                    "type": "text",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "8,035"
+                  }
+                ]
+              }
+            ],
+            "col_span": 1,
+            "row_span": 1
+          },
+          {
+            "type": "table",
+            "columns": 6,
+            "row_count": 2,
+            "col_normalized_consistent": true,
+            "row_fill": [
+              6,
+              6
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "type": "label",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "가구원수"
+                  },
+                  {
+                    "type": "label",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "2인"
+                  },
+                  {
+                    "type": "label",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "3인"
+                  },
+                  {
+                    "type": "label",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "4인"
+                  },
+                  {
+                    "type": "label",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "5인"
+                  },
+                  {
+                    "type": "label",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "6인"
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "text",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "중위 120%"
+                  },
+                  {
+                    "type": "text",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "4,720"
+                  },
+                  {
+                    "type": "text",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "6,031"
+                  },
+                  {
+                    "type": "text",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "7,318"
+                  },
+                  {
+                    "type": "text",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "8,530"
+                  },
+                  {
+                    "type": "text",
+                    "col_span": 1,
+                    "row_span": 1,
+                    "text": "9,678"
+                  }
+                ]
+              }
+            ],
+            "col_span": 1,
+            "row_span": 1
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "중위소득 기준 현행화"
+          }
+        ]
+      }
+    ]
+  }
+}

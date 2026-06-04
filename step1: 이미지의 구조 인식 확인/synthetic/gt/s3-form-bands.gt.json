@@ -1,0 +1,223 @@
+{
+  "id": "s3-form-bands",
+  "source": "s3-form-bands.html",
+  "skeleton": {
+    "type": "table",
+    "columns": 6,
+    "row_count": 10,
+    "col_normalized_consistent": true,
+    "row_fill": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "rows": [
+      {
+        "cells": [
+          {
+            "type": "text",
+            "col_span": 6,
+            "row_span": 1,
+            "text": "신청자 정보"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "성명"
+          },
+          {
+            "type": "empty",
+            "col_span": 1,
+            "row_span": 1
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "생년월일"
+          },
+          {
+            "type": "empty",
+            "col_span": 1,
+            "row_span": 1
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "성별"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "□ 남 □ 여"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "연락처"
+          },
+          {
+            "type": "empty",
+            "col_span": 1,
+            "row_span": 1
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "이메일"
+          },
+          {
+            "type": "empty",
+            "col_span": 1,
+            "row_span": 1
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "구분"
+          },
+          {
+            "type": "text",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "□ 신규 □ 재방문"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "text",
+            "col_span": 6,
+            "row_span": 1,
+            "text": "상담 신청 내용"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 2,
+            "text": "신청 유형"
+          },
+          {
+            "type": "text",
+            "col_span": 5,
+            "row_span": 1,
+            "text": "□ ① 개인상담 □ ② 가족상담 □ ③ 집단상담 □ ④ 기타"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "text",
+            "col_span": 5,
+            "row_span": 1,
+            "text": "(④ 기타 선택 시 사유 기재)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "희망 일시"
+          },
+          {
+            "type": "empty",
+            "col_span": 5,
+            "row_span": 1
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "상세 내용"
+          },
+          {
+            "type": "empty",
+            "col_span": 5,
+            "row_span": 1
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "text",
+            "col_span": 6,
+            "row_span": 1,
+            "text": "접수 확인 (기관 작성)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "접수번호"
+          },
+          {
+            "type": "empty",
+            "col_span": 1,
+            "row_span": 1
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "접수일"
+          },
+          {
+            "type": "empty",
+            "col_span": 1,
+            "row_span": 1
+          },
+          {
+            "type": "label",
+            "col_span": 1,
+            "row_span": 1,
+            "text": "담당자"
+          },
+          {
+            "type": "empty",
+            "col_span": 1,
+            "row_span": 1
+          }
+        ]
+      }
+    ]
+  }
+}
